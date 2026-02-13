@@ -1,0 +1,32 @@
+# WORTEX — Extensionless URLs (Apache)
+# Serve .html when requesting without extension (e.g. /versenyek/clubcup -> clubcup.html)
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # If request is for an existing file or directory, do nothing
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Root: / -> index.html
+  RewriteRule ^$ index.html [L]
+
+  # Podcast: /podcast -> podcast/index.html
+  RewriteRule ^podcast/?$ podcast/index.html [L]
+
+  # Versenyek: /versenyek/name -> versenyek/name.html
+  RewriteRule ^versenyek/([a-z0-9-]+)/?$ versenyek/$1.html [L]
+
+  # Optional: redirect .html to extensionless (301) to avoid duplicate content
+  RewriteCond %{THE_REQUEST} \s/+(.*?)\.html[\s?] [NC]
+  RewriteRule ^ /%1 [R=301,L,NE]
+</IfModule>
+
+# Optional: cache and security headers (no content/design change)
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|css|js|webp|png|jpg|jpeg|gif|ico|webm)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>

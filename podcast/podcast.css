@@ -1,0 +1,217 @@
+/* WRTX Podcast page – extra styles (uses versenyek/tournament.css as base) */
+
+/* Long description (Rólunk section) */
+.podcast__description {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.podcast__description p {
+    font-size: clamp(15px, 1.6vw, 17px);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0 0 var(--spacing-md);
+}
+
+.podcast__description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Hol tudom hallgatni? */
+.podcast-listen__intro {
+    text-align: center;
+    font-size: clamp(15px, 1.5vw, 17px);
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: var(--spacing-xl);
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.podcast-listen__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 640px) {
+    .podcast-listen__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.podcast-listen__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: var(--spacing-md);
+    padding: var(--spacing-xl);
+    min-height: 160px;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-lg);
+    color: inherit;
+    text-decoration: none;
+    transition: all var(--transition);
+}
+
+.podcast-listen__link:hover {
+    border-color: var(--blue);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(11, 107, 255, 0.3);
+}
+
+/* Icons: same size and design (unified style) */
+.podcast-listen__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    color: var(--sky);
+}
+
+.podcast-listen__icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.podcast-listen__link:hover .podcast-listen__icon {
+    color: var(--cyan);
+}
+
+.podcast-listen__icon--spotify {
+    color: var(--sky);
+}
+
+.podcast-listen__link:hover .podcast-listen__icon--spotify {
+    color: var(--cyan);
+}
+
+.podcast-listen__label {
+    font-family: var(--font-display);
+    font-size: clamp(16px, 1.8vw, 18px);
+    font-weight: 600;
+    color: var(--sky);
+    text-align: center;
+}
+
+/* Jelentkezés vendégnek */
+.podcast-vendeg__intro {
+    max-width: 560px;
+    margin: 0 auto var(--spacing-xl);
+    text-align: center;
+    font-size: clamp(15px, 1.6vw, 17px);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.podcast-vendeg__cta {
+    text-align: center;
+}
+
+/* Menetrend – Google Calendar embed, responsive */
+.podcast__calendar-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: var(--spacing-xl) auto 0;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    background: var(--glass-bg);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    aspect-ratio: 4 / 3;
+}
+
+.podcast__calendar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+/* Mobile: taller ratio so calendar is more usable on small screens */
+@media (max-width: 639px) {
+    .podcast__calendar-wrap {
+        aspect-ratio: 3 / 4;
+    }
+}
+
+/* ============================================
+   Podcast Host
+   ============================================ */
+.podcast-host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+    gap: 0.75rem;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.podcast-host__label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--cyan);
+    transition: color 0.3s ease;
+}
+
+.podcast-host__avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--glass-border);
+    box-shadow: 0 4px 24px rgba(0, 184, 212, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.podcast-host:hover .podcast-host__avatar {
+    transform: scale(1.08);
+    box-shadow: 0 8px 36px rgba(0, 184, 212, 0.4);
+    border-color: var(--cyan);
+}
+
+.podcast-host__avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: filter 0.4s ease;
+}
+
+.podcast-host:hover .podcast-host__avatar img {
+    filter: brightness(1.1);
+}
+
+.podcast-host__name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.podcast-host:hover .podcast-host__name {
+    color: var(--cyan);
+    transform: translateY(-2px);
+}
+
+.podcast-host:hover .podcast-host__label {
+    color: var(--sky);
+}

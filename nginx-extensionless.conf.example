@@ -1,0 +1,10 @@
+# Nginx — Extensionless URLs (optional)
+# Add inside your server { } block if you use Nginx instead of Apache.
+
+# Redirect .html requests to extensionless (301)
+rewrite ^/(.*)\.html$ /$1 permanent;
+
+# Serve .html when requesting without extension
+location / {
+    try_files $uri $uri/ $uri.html =404;
+}

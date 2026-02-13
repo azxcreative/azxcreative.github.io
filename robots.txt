@@ -1,0 +1,6 @@
+# WORTEX — https://wortexgg.hu
+User-agent: *
+Allow: /
+
+# Sitemap (extensionless URLs)
+Sitemap: https://wortexgg.hu/sitemap.xml

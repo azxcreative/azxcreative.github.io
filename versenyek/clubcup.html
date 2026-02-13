@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wortex Club Cup — WORTEX Verseny</title>
+    <meta name="description" content="Wortex Club Cup: csapatok kupája a WORTEX-en. Gyűjtsd össze a legtöbb pontot játékosaid helyezésével és legyél az esport csapatok bajnoka.">
+    <meta name="keywords" content="WORTEX, Wortex Club Cup, csapatok kupája, esport, verseny, Budapest, Blizzard">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#061a2d">
+    <link rel="canonical" href="https://wortexgg.hu/versenyek/clubcup">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Wortex Club Cup — WORTEX Verseny">
+    <meta property="og:description" content="Wortex Club Cup: csapatok kupája. Gyűjtsd össze a legtöbb pontot játékosaid helyezésével és legyél az esport csapatok bajnoka.">
+    <meta property="og:image" content="https://wortexgg.hu/img/wortexgghu-magyarorszag-legnagyobb-blizzard-tematikaju-rendezvenye.png">
+    <meta property="og:url" content="https://wortexgg.hu/versenyek/clubcup">
+    <meta property="og:site_name" content="WORTEX">
+    <meta property="og:locale" content="hu_HU">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wortex Club Cup — WORTEX Verseny">
+    <meta name="twitter:description" content="Wortex Club Cup: csapatok kupája. Gyűjtsd össze a legtöbb pontot játékosaid helyezésével és legyél az esport csapatok bajnoka.">
+    <meta name="twitter:image" content="https://wortexgg.hu/img/wortexgghu-magyarorszag-legnagyobb-blizzard-tematikaju-rendezvenye.png">
+    
+    <link rel="icon" type="image/png" sizes="48x48" href="../img/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/favicon-48x48.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tournament.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="../index.html#versenyek">WORTEX</a>
+            </div>
+            <ul class="nav__menu" id="nav-menu">
+                <li><a href="#partnerek" class="nav__link">Csapatok</a></li>
+                <li><a href="#lebonyolitas" class="nav__link">Lebonyolítás &amp; Szabályzat</a></li>
+                <li><a href="#tabella" class="nav__link">Tabella</a></li>
+                <li><a href="#gyoztesek" class="nav__link">Győztesek</a></li>
+                <li><a href="#kozvetites" class="nav__link">Közvetítés</a></li>
+                <li><a href="../index.html#versenyek" class="btn btn--back">VISSZA</a></li>
+            </ul>
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Tournament Hero -->
+    <section class="section tournament-hero" id="hero">
+        <div class="container">
+            <div class="tournament-hero__thumbnail">
+                <img src="img/wortex-esport-csapatok-versenye.webp" alt="Wortex Club Cup">
+            </div>
+            <h1 class="tournament-hero__title">Wortex Club Cup</h1>
+            <p class="tournament-hero__info">
+                A Wortex Club Cup a partner esport csapatok összetett versenye. A csapatok játékosokat igazolhatnak a főversenyek kezdete előtt, majd a játékosaik helyezései pontokat érnek a különböző játékok tornáin. A szezon végén a legtöbb pontot gyűjtő esport csapat elnyeri a Wortex Club Cup trófeát és a Wortex Club Bajnok címet.
+            </p>
+            <div class="tournament-hero__logos">
+                <div class="tournament-hero__logo-link">
+                    <img src="img/wortex-circuit-logo.png" alt="WORTEX Circuit" class="tournament-hero__logo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnerek Section -->
+    <section class="section" id="partnerek">
+        <div class="container">
+            <h2 class="section__title">Partner Csapatok</h2>
+            <div class="partnerek__grid">
+                <!-- Csapat card: logo, name, website + facebook + instagram + youtube links -->
+                <div class="csapat-card">
+                    <div class="csapat-card__logo">
+                        <img src="img/zentris-esport-csapat.webp" alt="Team Zentris">
+                    </div>
+                    <h3 class="csapat-card__name">Team Zentris</h3>
+                    <div class="csapat-card__links">
+                        <a href="https://teamzentris.org" target="_blank" rel="noopener noreferrer" class="csapat-card__link" aria-label="Weboldal"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+                        <a href="https://facebook.com/teamzentris" target="_blank" rel="noopener noreferrer" class="csapat-card__link" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+                        <a href="https://instagram.com/teamzentris" target="_blank" rel="noopener noreferrer" class="csapat-card__link" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+                        <a href="https://youtube.com/@teamzentris" target="_blank" rel="noopener noreferrer" class="csapat-card__link" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+                    </div>
+                </div>
+                <div class="csapat-card csapat-card--tbd">
+                    <span class="csapat-card__tbd">TBD</span>
+                </div>
+                <div class="csapat-card csapat-card--tbd">
+                    <span class="csapat-card__tbd">TBD</span>
+                </div>
+                <div class="csapat-card csapat-card--tbd">
+                    <span class="csapat-card__tbd">TBD</span>
+                </div>
+                <div class="csapat-card csapat-card--tbd">
+                    <span class="csapat-card__tbd">TBD</span>
+                </div>
+                <div class="csapat-card csapat-card--tbd">
+                    <span class="csapat-card__tbd">TBD</span>
+                </div>
+            </div>
+            <div class="partnerek__cta">
+                <a href="#kapcsolat" class="btn btn--primary btn--large">Legyél partner csapat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lebonyolítás Section -->
+    <section class="section lebonyolitas" id="lebonyolitas">
+        <div class="container">
+            <h2 class="section__title">Lebonyolítás</h2>
+            <div class="lebonyolitas__grid">
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title lebonyolitas__step-title--small">Versenykiírás</h3>
+                    <p class="lebonyolitas__step-description">A partner csapatok játékosokat igazolnak. A játékosok Main Event helyezéseikkel pontokat gyűjtenek a csapatnak. Az összesített pontokból áll a Club Cup ranglista.</p>
+                </div>
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title">Csapatkeret</h3>
+                    <p class="lebonyolitas__step-description">Játékonként maximum 2 játékos igazolható (StarCraft: Remastered-ban csak 1). Egy igazolási időszak, határidő a Main Event kezdete.</p>
+                </div>
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title">Pontszámítás</h3>
+                    <p class="lebonyolitas__step-description">Minden Main Event helyezés pontot ér a ponttábla szerint. A csapat ranglistapontja a játékokból szerzett pontok összege.</p>
+                </div>
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title">Legjobb eredmény</h3>
+                    <p class="lebonyolitas__step-description">Játékonként csak a csapat legjobb helyezésének pontja számít (1 játékos pontja játékonként).</p>
+                </div>
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zM9 14H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2zm-8 4H7v-2h2v2zm4 0h-2v-2h2v2zm4 0h-2v-2h2v2z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title">Igazolási határidők</h3>
+                    <p class="lebonyolitas__step-description">Az igazolási időszak a Main Event kezdetéig tart. Aki még nincs beállva vagy a játékosa nem jutott be, az is tud igazolni a határidőig.</p>
+                </div>
+                <div class="lebonyolitas__step">
+                    <div class="lebonyolitas__step-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94.63 1.5 1.98 2.63 3.61 2.96V19H7v2h10v-2h-4v-3.1c1.63-.33 2.98-1.46 3.61-2.96C19.08 12.63 21 10.55 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/></svg></div>
+                    <h3 class="lebonyolitas__step-title">Díjazás</h3>
+                    <p class="lebonyolitas__step-description">A győztes csapat trófeát nyer és elnyeri a Wortex Club Bajnok címet.</p>
+                </div>
+            </div>
+            <div class="lebonyolitas__cta">
+                <a href="clubcup-szabalyzat.html" class="btn btn--primary btn--large" aria-label="Részletes szabályzat">Részletes Szabályzat</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabella Section -->
+    <section class="section tabella" id="tabella">
+        <div class="container">
+            <h2 class="section__title">Tabella</h2>
+            <div class="tabella__list">
+                <div class="tabella__row tabella__row--first">
+                    <span class="tabella__helyezes">1</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row tabella__row--second">
+                    <span class="tabella__helyezes">2</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row tabella__row--third">
+                    <span class="tabella__helyezes">3</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">4</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">5</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">6</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Győztesek Section -->
+    <section class="section gyoztesek" id="gyoztesek">
+        <div class="container">
+            <h2 class="section__title">Győztesek</h2>
+            <div class="gyoztesek__grid">
+                <div class="gyoztesek__card gyoztesek__card--tbd">
+                    <h3 class="gyoztesek__game">StarCraft 2</h3>
+                    <div class="gyoztesek__logo gyoztesek__logo--tbd"></div>
+                    <span class="gyoztesek__player">TBD</span>
+                </div>
+                <div class="gyoztesek__card gyoztesek__card--tbd">
+                    <h3 class="gyoztesek__game">StarCraft</h3>
+                    <div class="gyoztesek__logo gyoztesek__logo--tbd"></div>
+                    <span class="gyoztesek__player">TBD</span>
+                </div>
+                <div class="gyoztesek__card gyoztesek__card--tbd">
+                    <h3 class="gyoztesek__game">WarCraft 3</h3>
+                    <div class="gyoztesek__logo gyoztesek__logo--tbd"></div>
+                    <span class="gyoztesek__player">TBD</span>
+                </div>
+                <div class="gyoztesek__card gyoztesek__card--tbd">
+                    <h3 class="gyoztesek__game">Hearthstone</h3>
+                    <div class="gyoztesek__logo gyoztesek__logo--tbd"></div>
+                    <span class="gyoztesek__player">TBD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Közvetítés Section -->
+    <section class="section" id="kozvetites">
+        <div class="container">
+            <h2 class="section__title">Közvetítés</h2>
+            <p class="tournament-hero__info" style="text-align: center;">
+                A mérkőzéseket élőben közvetítjük Twitch és YouTube csatornáinkon.
+            </p>
+            <div style="text-align: center; margin-top: var(--spacing-lg);">
+                <a href="https://www.twitch.tv/wortexgghu" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--large" style="margin-right: var(--spacing-md);">Twitch</a>
+                <a href="https://www.youtube.com/@wortexgghu" target="_blank" rel="noopener noreferrer" class="btn btn--secondary btn--large">YouTube</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kapcsolat Section -->
+    <section class="section tournament-kapcsolat" id="kapcsolat">
+        <div class="container">
+            <h2 class="tournament-kapcsolat__title">Kapcsolat</h2>
+            <p class="tournament-kapcsolat__email">
+                <strong>Email:</strong> <a href="mailto:contact@wortexgg.hu">contact@wortexgg.hu</a>
+            </p>
+            <p style="margin-top: var(--spacing-md); color: rgba(255, 255, 255, 0.8);">
+                További kérdéseid esetén keress minket bármelyik elérhetőségen.
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__logo">WORTEX</div>
+                <div class="footer__social">
+                    <a href="https://discord.gg/bVnTDQyU" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="https://instagram.com/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+                    <a href="https://www.twitch.tv/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitch">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428H12l-3 3v-3H4.714V1.714h15.857Z"/></svg>
+                    </a>
+                    <a href="https://www.youtube.com/@wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                </div>
+                <div class="footer__email">
+                    <a href="mailto:contact@wortexgg.hu">contact@wortexgg.hu</a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>© WORTEX — Minden jog fenntartva.</p>
+                <p class="footer__credit"><a href="https://azxcreative.com" target="_blank" rel="noopener noreferrer">AZX Creative</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="tournament.js"></script>
+</body>
+</html>
