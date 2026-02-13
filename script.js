@@ -425,7 +425,7 @@ const rolunkVideoClose = document.getElementById('rolunk-video-modal-close');
 const rolunkVideoOverlay = document.getElementById('rolunk-video-modal-overlay');
 const rolunkVideoIframe = document.getElementById('rolunk-video-modal-iframe');
 
-const rolunkVideoSrc = 'https://www.youtube.com/embed/-maW6hS9POk?autoplay=1';
+const rolunkVideoSrc = 'https://www.youtube.com/embed/6O9eGtQ7cXU?autoplay=1';
 
 function openRolunkVideo() {
     if (rolunkVideoModal && rolunkVideoIframe) {
