@@ -14,7 +14,7 @@
   RewriteRule ^$ index.html [L]
 
   # Discord redirect: /discord -> Discord invite
-  RewriteRule ^discord/?$ https://discord.com/invite/bVnTDQyU [R=301,L]
+  RewriteRule ^discord/?$ https://discord.com/invite/bVnTDQyU
 
   # Podcast: /podcast -> podcast/index.html
   RewriteRule ^podcast/?$ podcast/index.html [L]
