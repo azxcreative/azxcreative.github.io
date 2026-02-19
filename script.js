@@ -503,6 +503,15 @@ window.addEventListener('load', () => {
         current_lang: 'hu',
         autoclear_cookies: true,
         page_scripts: true,
+        categories: {
+            necessary: {
+                enabled: true,
+                readOnly: true
+            },
+            analytics: {
+                enabled: false
+            }
+        },
         languages: {
             hu: {
                 consent_modal: {
@@ -517,8 +526,8 @@ window.addEventListener('load', () => {
                     accept_all_btn: 'Összes elfogadása',
                     reject_all_btn: 'Összes elutasítása',
                     blocks: [
-                        { title: 'Szükséges cookie-k', description: 'Ezek a cookie-k elengedhetetlenek a weboldal működéséhez.' },
-                        { title: 'Analitikai cookie-k', description: 'Segítenek megérteni, hogyan használják a látogatók a weboldalt.' }
+                        { title: 'Szükséges cookie-k', description: 'Ezek a cookie-k elengedhetetlenek a weboldal működéséhez.', linkedCategory: 'necessary' },
+                        { title: 'Analitikai cookie-k', description: 'Segítenek megérteni, hogyan használják a látogatók a weboldalt.', linkedCategory: 'analytics' }
                     ]
                 }
             }
