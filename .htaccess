@@ -5,8 +5,8 @@
   RewriteEngine On
   RewriteBase /
 
-  # Discord redirect: /discord -> Discord invite
-  RewriteRule ^discord/?$ https://discord.com/invite/kV6BqMpZHz [R=301,L]
+  # Discord: /discord -> discord/index.html (redirect to invite)
+  RewriteRule ^discord/?$ discord/index.html [L]
 
   # If request is for an existing file or directory, do nothing
   RewriteCond %{REQUEST_FILENAME} -f [OR]
