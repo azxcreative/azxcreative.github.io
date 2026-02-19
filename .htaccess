@@ -6,7 +6,7 @@
   RewriteBase /
 
   # Discord redirect: /discord -> Discord invite
-  RewriteRule ^discord/?$ https://discord.com/invite/bVnTDQyU [R=301,L]
+  RewriteRule ^discord/?$ https://discord.com/invite/kV6BqMpZHz [R=301,L]
 
   # If request is for an existing file or directory, do nothing
   RewriteCond %{REQUEST_FILENAME} -f [OR]
