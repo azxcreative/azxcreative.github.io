@@ -283,6 +283,9 @@
                     margin-top: 0.5rem;
                 }
                 @media (max-width: 900px) {
+                    #sorsolas .sorsolas-groups-grid {
+                        grid-template-columns: 1fr !important;
+                    }
                     #sorsolas .playoffs-bracket {
                         grid-template-columns: 1fr;
                     }
@@ -320,7 +323,7 @@
                 </span>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: var(--spacing-lg); align-items: start;">
+            <div class="sorsolas-groups-grid" style="display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: var(--spacing-lg); align-items: start;">
                 <div class="szabalyzat__table-wrap">
                     <h3 class="szabalyzat__table-title">A csoport</h3>
                     <table class="szabalyzat__table">
@@ -381,7 +384,7 @@
             </div>
 
             <div class="sorsolas-panel" data-stage-panel="stage2">
-                <div style="display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: var(--spacing-lg); align-items: start;">
+                <div class="sorsolas-groups-grid" style="display: grid; grid-template-columns: repeat(2, minmax(280px, 1fr)); gap: var(--spacing-lg); align-items: start;">
                     <div class="szabalyzat__table-wrap">
                         <h3 class="szabalyzat__table-title">A csoport</h3>
                         <table class="szabalyzat__table">
