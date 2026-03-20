@@ -44,6 +44,7 @@
             </div>
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#lebonyolitas" class="nav__link">Lebonyolítás</a></li>
+                <li><a href="#sorsolas" class="nav__link">Sorsolás</a></li>
                 <li><a href="#jelentkezes" class="nav__link">Jelentkezés</a></li>
                 <li><a href="#nyeremenyek" class="nav__link">Nyeremények</a></li>
                 <li><a href="#kozvetites" class="nav__link">Közvetítés</a></li>
@@ -100,6 +101,137 @@
                 <div class="lebonyolitas__step">
                     <span class="lebonyolitas__step-number" aria-hidden="true">3</span>
                     <h3 class="lebonyolitas__step-title">Döntő a színpadon</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorsolás Section -->
+    <section class="section" id="sorsolas">
+        <div class="container">
+            <h2 class="section__title">Sorsolás</h2>
+            <style>
+                #sorsolas .playoffs-bracket {
+                    position: relative;
+                    display: grid;
+                    grid-template-columns: minmax(240px, 1fr) 70px minmax(240px, 1fr) 70px minmax(260px, 1fr);
+                    gap: var(--spacing-md);
+                    align-items: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                #sorsolas .playoff-column {
+                    display: grid;
+                    gap: var(--spacing-md);
+                }
+                #sorsolas .playoff-column--semi {
+                    gap: calc(var(--spacing-md) * 2);
+                }
+                #sorsolas .playoff-match {
+                    border: 1px solid var(--glass-border);
+                    border-radius: var(--radius-lg);
+                    padding: 1rem;
+                    background: rgba(255, 255, 255, 0.04);
+                    backdrop-filter: blur(8px);
+                    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+                }
+                #sorsolas .playoff-match:hover {
+                    transform: translateY(-4px);
+                    border-color: rgba(59, 207, 255, 0.55);
+                    box-shadow: 0 14px 28px rgba(11, 107, 255, 0.16);
+                }
+                #sorsolas .playoff-match--grand {
+                    background: linear-gradient(135deg, rgba(255, 215, 0, 0.14), rgba(255, 184, 0, 0.08));
+                    border-color: rgba(255, 215, 0, 0.45);
+                    box-shadow: 0 10px 26px rgba(255, 215, 0, 0.12);
+                }
+                #sorsolas .playoff-match--grand:hover {
+                    border-color: rgba(255, 215, 0, 0.75);
+                    box-shadow: 0 16px 32px rgba(255, 215, 0, 0.2);
+                }
+                #sorsolas .playoff-title {
+                    font-weight: 700;
+                    margin-bottom: 0.6rem;
+                    color: var(--sky);
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    font-size: 0.85rem;
+                }
+                #sorsolas .playoff-title--gold {
+                    color: #ffd700;
+                }
+                #sorsolas .playoff-player {
+                    border: 1px solid rgba(255, 255, 255, 0.12);
+                    background: rgba(0, 0, 0, 0.25);
+                    border-radius: 0.65rem;
+                    padding: 0.65rem 0.85rem;
+                    font-weight: 600;
+                    text-align: center;
+                }
+                #sorsolas .playoff-player + .playoff-player {
+                    margin-top: 0.5rem;
+                }
+                #sorsolas .playoff-connector {
+                    height: 2px;
+                    width: 100%;
+                    background: linear-gradient(90deg, rgba(59, 207, 255, 0.45), rgba(255, 215, 0, 0.45));
+                    border-radius: 999px;
+                }
+                @media (max-width: 1100px) {
+                    #sorsolas .playoffs-bracket {
+                        grid-template-columns: 1fr;
+                        max-width: 640px;
+                    }
+                    #sorsolas .playoff-connector {
+                        width: 2px;
+                        height: 26px;
+                        margin: 0 auto;
+                    }
+                }
+            </style>
+            <div class="playoffs-bracket">
+                <div class="playoff-column">
+                    <div class="playoff-match">
+                        <div class="playoff-title">Quarter-final 1</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                    <div class="playoff-match">
+                        <div class="playoff-title">Quarter-final 2</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                    <div class="playoff-match">
+                        <div class="playoff-title">Quarter-final 3</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                    <div class="playoff-match">
+                        <div class="playoff-title">Quarter-final 4</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                </div>
+                <div class="playoff-connector" aria-hidden="true"></div>
+                <div class="playoff-column playoff-column--semi">
+                    <div class="playoff-match">
+                        <div class="playoff-title">Semi-final 1</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                    <div class="playoff-match">
+                        <div class="playoff-title">Semi-final 2</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
+                </div>
+                <div class="playoff-connector" aria-hidden="true"></div>
+                <div class="playoff-column">
+                    <div class="playoff-match playoff-match--grand">
+                        <div class="playoff-title playoff-title--gold">Grand-final (Gamerland, Budapest)</div>
+                        <div class="playoff-player">TBD</div>
+                        <div class="playoff-player">TBD</div>
+                    </div>
                 </div>
             </div>
         </div>
