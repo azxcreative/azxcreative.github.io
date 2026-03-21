@@ -26,6 +26,9 @@
     <meta name="twitter:image" content="https://wortexgg.hu/img/wortexgghu-magyarorszag-legnagyobb-blizzard-tematikaju-rendezvenye.png">
     
     <link rel="icon" type="image/png" sizes="48x48" href="../img/favicon/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/favicon-48x48.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -57,6 +60,7 @@
             <nav class="szabalyzat__nav" id="tartalom" aria-label="Tartalomjegyzék">
                 <h2 class="szabalyzat__nav-title">Tartalomjegyzék</h2>
                 <ul class="szabalyzat__nav-list">
+                    <li><a href="#fogalmak" class="szabalyzat__nav-link">Fogalmak és rövidítések</a></li>
                     <li><a href="#tldr" class="szabalyzat__nav-link">TL;DR</a></li>
                     <li><a href="#altalanos" class="szabalyzat__nav-link">1. Általános szabályok</a></li>
                     <li><a href="#idozites" class="szabalyzat__nav-link">2. Időzítés és határidők</a></li>
@@ -69,18 +73,44 @@
                 </ul>
             </nav>
 
+            <!-- Fogalmak -->
+            <section class="szabalyzat__section szabalyzat__section--fogalmak" id="fogalmak">
+                <h2 class="szabalyzat__section-title">Fogalmak és rövidítések</h2>
+                <p class="szabalyzat__lead">A Wortex Club Cup csapatok közötti pontverseny a WORTEX játékainak <strong>Főszakaszaiban</strong> elért helyezésekből. <strong>Rövidítések:</strong></p>
+                <ul class="szabalyzat__fogalmak-list">
+                    <li><strong>StarCraft II</strong> (a továbbiakban: <strong>SC2</strong>)</li>
+                    <li><strong>StarCraft: Remastered</strong> (a továbbiakban: <strong>SC:R</strong> vagy <strong>SC: Remastered</strong>)</li>
+                    <li><strong>Warcraft III</strong> (a továbbiakban: <strong>WC3</strong>)</li>
+                    <li><strong>Hearthstone</strong> (a továbbiakban: <strong>HS</strong>)</li>
+                </ul>
+                <h3 class="szabalyzat__subsection">Kulcsfogalmak</h3>
+                <dl class="szabalyzat__dl">
+                    <dt>Főszakasz</dt>
+                    <dd>A WORTEX adott játékában az a szakasz, amelyben a helyezések a <a href="#ponttablak">pontszerzési táblázat</a> szerinti <strong>helyezési pontot</strong> adják. A pontos lebonyolítást (formátum, menetrend) az adott versenykiírás és a szervezők közlik.</dd>
+                    <dt>Helyezési pont (P)</dt>
+                    <dd>Egy adott helyezésért a táblázat szerint járó pont (nem keverendő a „Club Cup összponttal”).</dd>
+                    <dt>Club Cup összpont (összpont)</dt>
+                    <dd>A 4. fejezet szerint kiszámolt, egy csapatra vonatkozó összesített pont; a ranglistán ezzel versenyeznek.</dd>
+                    <dt>Partner csapat</dt>
+                    <dd>Olyan esport szervezet vagy csapat, amelyet a WORTEX a Club Cup adott szezonjára hivatalosan elfogadott résztvevőként.</dd>
+                </dl>
+            </section>
+
             <!-- TL;DR -->
             <section class="szabalyzat__section szabalyzat__section--tldr" id="tldr">
                 <h2 class="szabalyzat__section-title">TL;DR</h2>
+                <p class="szabalyzat__tldr-intro">Lényeg a pontokban:</p>
                 <div class="szabalyzat__tldr">
                     <ul class="szabalyzat__tldr-list">
-                        <li>Partner esport csapatok játékosokat igazolnak játékokra.</li>
-                        <li>A játékosok a Főszakasz helyezéseikkel pontokat gyűjtenek a csapatnak.</li>
-                        <li>SC2 kötelező, és mindig csak 1 játékos pontja számít.</li>
-                        <li>A csapatnak legalább 2 játékban indulnia kell.</li>
-                        <li>Ha a csapat csak 2 játékban indul, a nem-SC2 játék automatikusan dupla beszámítású (max. 3 eredmény a 4 helyett).</li>
-                        <li>Igazolási időszak a Főszakasz kezdetéig: játékonként max 2 játékos (SC: Remastered-ban 1). Mindenki ugyanaddig a határidőig igazolhat.</li>
-                        <li>A győztes csapat trófeát nyer és elnyeri a Wortex Club Bajnok címet.</li>
+                        <li>Játékonként <strong>nincs felső létszámkorlát</strong> az igazolható játékosok számára; új játékosok legkésőbb a Főszakasz <strong>első hivatalos mérkőzésének kezdetéig</strong> igazolhatók.</li>
+                        <li><strong>Pontot csak a Főszakaszban</strong> elért helyezések adnak; selejtező vagy kvalifikáció <strong>önmagában nem</strong> hoz helyezési pontot.</li>
+                        <li>A Főszakaszban elért helyezések <strong>helyezési pontot</strong> adnak a táblázat szerint; ezekből lesz a csapat <strong>Club Cup összpontja</strong>. A legtöbb összponttal rendelkező csapat nyer.</li>
+                        <li>Ugyanaz a személy több játékban is nevezhet — minden játék <strong>külön-külön</strong> számít.</li>
+                        <li><strong>SC2 kötelező:</strong> a Club Cup nevezéséhez a csapatnak <strong>rendelkeznie kell StarCraft II játékossal</strong>; az SC2 táblázat adja a legmagasabb helyezési pontokat.</li>
+                        <li><strong>SC2:</strong> a csapat <strong>két legjobb</strong> Főszakasz-helyezésének pontja számít súlyozva: <strong>P<sub>1</sub> + 0,5 × P<sub>2</sub></strong> (ha csak egy játékos jut be, vagy nincs második játékos: P<sub>2</sub> = 0).</li>
+                        <li><strong>SC:R, WC3, HS:</strong> játékonként csak a csapat <strong>legjobb</strong> helyezésű játékosának pontja számít.</li>
+                        <li><strong>Holtverseny</strong> (azonos Club Cup összpont): több 1. hely → magasabb SC2 csapatpont → több 2. hely összesítve → több 3–4. hely összesítve → ha továbbra is döntetlen: <strong>sorsolás</strong> (részletes sorrend: 4.6).</li>
+                        <li><strong>Győztes:</strong> trófea + <strong>Wortex Club Bajnok</strong> cím.</li>
                     </ul>
                 </div>
             </section>
@@ -89,15 +119,13 @@
             <section class="szabalyzat__section" id="altalanos">
                 <h2 class="szabalyzat__section-title">1) Általános szabályok</h2>
                 <h3 class="szabalyzat__subsection">1.1 Mi a Wortex Club Cup?</h3>
-                <p>A Wortex Club Cup a WORTEX partner esport csapatainak összetett kupája. A partner csapatok játékosokat igazolnak, akik a versenyeken elért Főszakasz helyezéseikkel pontokat gyűjtenek a csapatuknak. Az összesített pontokból áll össze a Club Cup ranglista. A győztes csapat trófeát nyer, és elnyeri a Wortex Club Bajnok címet. Pénzdíj nincs (a Club Cup célja presztízs és klubverseny).</p>
+                <p>A Wortex Club Cup a WORTEX <strong>partner csapatainak</strong> (lásd <a href="#fogalmak">Fogalmak</a>) összetett kupája: a csapatok <strong>játékonként</strong> igazolnak játékosokat, és az igazolt játékosok <strong>Főszakasz</strong>-helyezéseiből gyűjtik a <strong>helyezési pontokat</strong>; ezekből lesz a csapat <strong>Club Cup összpontja</strong>. A <strong>legnagyobb összponttal</strong> rendelkező csapat nyeri a kupát. A győztes csapat trófeát nyer, és elnyeri a <strong>Wortex Club Bajnok</strong> címet. Pénzdíj nincs (a Club Cup célja presztízs és klubverseny). A részletes menetrend, igazolás és pontszámítási szabályok a következő fejezetekben olvashatók.</p>
                 <h3 class="szabalyzat__subsection">1.2 Mely játékokból számít pont?</h3>
-                <p>A pontok kizárólag a Főszakasz szakaszból számítanak az alábbi címekben: <strong>StarCraft II</strong>, <strong>StarCraft: Remastered</strong>, <strong>Warcraft III</strong>, <strong>Hearthstone</strong>.</p>
-                <h3 class="szabalyzat__subsection">1.3 Részvételi feltételek (kötelező minimumok)</h3>
+                <p>A <strong>helyezési pontok</strong> kizárólag az alábbi címek <strong>Főszakaszában</strong> elért helyezésekből számítanak: <strong>StarCraft II</strong>, <strong>StarCraft: Remastered</strong>, <strong>Warcraft III</strong>, <strong>Hearthstone</strong>.</p>
+                <h3 class="szabalyzat__subsection">1.3 Részvételi feltételek</h3>
                 <ul>
-                    <li>A Club Cupban kizárólag partner csapatok vehetnek részt.</li>
-                    <li><strong>Kötelező játék:</strong> minden partner csapatnak kötelező igazolnia StarCraft II játékost és megpróbálni indulni a StarCraft II Főszakaszben. Ha az igazolt játékos(ok) nem jutnak be, a csapat továbbra is indulhat a Club Cupon (lásd 3.6).</li>
-                    <li><strong>Minimum 2 játék szabály:</strong> a Club Cup ranglistáján való részvételhez a csapatnak legalább 2 különböző játékban kell indulnia (SC2 + legalább 1 másik).</li>
-                    <li>Ha a csapat csak SC2-ben indul, akkor indulhat a tornán, de nem jogosult a Club Cup trófeára / Club Bajnok címre.</li>
+                    <li>A Club Cupban a részvétel nem automatikus: a WORTEX partner esport csapatai külön jelentkeznek és igazolnak — utóbbi amennyiben az adott játékban vagy játékokban még nincs játékosuk. A Club Cup a partneri keret részeként, külön meghirdetéssel indul.</li>
+                    <li><strong>StarCraft II (SC2) kötelező:</strong> a Club Cupra való nevezéshez a csapatnak <strong>rendelkeznie kell StarCraft II játékossal</strong> — ez <strong>nevezési feltétel</strong>, nem pontgarancia: nem jelenti automatikusan, hogy a játékos be is jut a Főszakaszba; ha nem jut be, <strong>SC2-ből 0 pont</strong> számít, de a csapat továbbra is gyűjthet pontot a többi játékból (lásd 3.3, valamint a pontszámítási szabályokat a 4. fejezetben).</li>
                 </ul>
             </section>
 
@@ -106,126 +134,120 @@
                 <h2 class="szabalyzat__section-title">2) Időzítés és határidők</h2>
                 <h3 class="szabalyzat__subsection">2.1 Tájékoztató hónapok (változhat)</h3>
                 <ul>
-                    <li>StarCraft II: június</li>
-                    <li>StarCraft: Remastered: május</li>
-                    <li>Warcraft III: június</li>
-                    <li>Hearthstone: augusztus</li>
+                    <li>StarCraft II — Főszakasz: június</li>
+                    <li>StarCraft: Remastered — Főszakasz: május–június</li>
+                    <li>Hearthstone — Főszakasz: július</li>
+                    <li>Warcraft III — Főszakasz: később közzétéve (TBD)</li>
                 </ul>
                 <p>A pontos dátumok és lebonyolítási formátumok változhatnak a nevezők számától és egyéb szervezési szempontoktól függően. A csapatok időben értesítést kapnak minden változásról.</p>
                 <h3 class="szabalyzat__subsection">2.2 Igazolási időszak és Főszakasz</h3>
-                <p>A pontgyűjtés az adott játék Főszakasz szakaszától érvényes. Az igazolási időszak játékonként a Főszakasz kezdetéig tart: a játékosokat legkésőbb az adott játék Főszakaszjének kezdete előtt kell igazolni. Így minden csapat ugyanaddig a határidőig igazolhat, és aki még nincs beállva (nincs játékosa), vagy akinek a játékosa nem jutott be a Főszakaszbe, az is tud igazolni a határidőig. A szervezők a pontos nyitást és határidőt játékonként közlik.</p>
+                <p>A pontgyűjtés az adott játék <strong>Főszakaszában</strong> elért helyezésekből történik. Az igazolás játékonként legkésőbb az adott játék Főszakaszának <strong>első hivatalos mérkőzésének kezdetéig</strong> tehető meg (a pontos időpontot a szervezők játékonként közzéteszik). A határidőig a csapat <strong>bővítheti vagy módosíthatja</strong> a játékoslistát — <strong>nincs előírt felső létszámkorlát</strong> játékonként.</p>
             </section>
 
             <!-- 3. Igazolás -->
             <section class="szabalyzat__section" id="igazolas">
-                <h2 class="szabalyzat__section-title">3) Átigazolás (igazolás) szabályzat</h2>
-                <h3 class="szabalyzat__subsection">3.1 Igazolás játékonként</h3>
-                <p>Az igazolás játék specifikus. Ha ugyanaz a játékos több játékban is indul, az minden játékban külön igazolásnak számít. Példa: ugyanaz a játékos SC2-ben és WC3-ban indul → 2 igazolás (SC2 + WC3).</p>
-                <h3 class="szabalyzat__subsection">3.2 Keretlimit</h3>
-                <p>Egy csapat játékonként legfeljebb 2 játékost igazolhat (StarCraft: Remastered esetén legfeljebb 1 játékost). A keretlimit a Főszakasz kezdetéig igazolva teljesíthető.</p>
-                <h3 class="szabalyzat__subsection">3.3 StarCraft: Remastered speciális korlát (Top 4 / Top 8)</h3>
-                <p>A StarCraft: Remastered Főszakasz mezőny mérete a nevezők számától függően Top 4 vagy Top 8. Csapatonként legfeljebb 1 játékos igazolható. Top 4 esetén legfeljebb 4 játékos indulhat; Top 8 esetén legfeljebb 8. Ha a partner csapatok száma meghaladja a Főszakasz mezőny méretét, nem garantált, hogy minden csapat tud SC: Remastered játékost igazolni.</p>
-                <h3 class="szabalyzat__subsection">3.4 Ha az igazolt játékos nem jut be a Főszakaszbe (csere lehetőség)</h3>
-                <p>Ha a csapat igazolt játékosa nem jut be az adott játék Főszakaszjébe, a határidőig (Főszakasz kezdete) lehetősége van egy, a Főszakaszbe bejutott, csapattalan játékost igazolni, ha ilyen van és a szervezők nyilvántartása alapján elérhető. A csere igazolásra a keretlimit (játékonként 2, SC: Remastered esetén 1) továbbra is vonatkozik.</p>
-                <h3 class="szabalyzat__subsection">3.5 Ha a csapat SC2 játékosa nem jut be – Club Cup indulás</h3>
-                <p>Ha a csapat StarCraft II játékosa (vagy játékosai) nem jutnak be a Főszakaszbe, és a határidőig nem sikerül más, bejutott játékost igazolni, a csapat <strong>továbbra is indulhat a Club Cupon</strong>: a többi játékból (SC: Remastered, Warcraft III, Hearthstone) szerzett pontok számítanak, SC2-ből 0 pont. A csapat nem esik ki a Club Cupból emiatt; a minimum 2 játék szabályt a többi játékkal teljesítheti, és a ranglistán behozhatja a hátrányt a többi játékból.</p>
+                <h2 class="szabalyzat__section-title">3) Igazolási szabályzat</h2>
+                <h3 class="szabalyzat__subsection">3.1 Igazolás játékonként és több játékban ugyanaz a játékos</h3>
+                <p>Az igazolás <strong>játék specifikus</strong>: minden címhez külön <strong>igazolás</strong> tartozik a szervezők által kijelölt felületen vagy csatornán.</p>
+                <p>Ha <strong>ugyanaz a személy</strong> több Wortex Club Cup címben is szerepel, <strong>minden játékban önálló „játékosként”</strong> minősül a pontszámítás és az adminisztráció szempontjából — tehát pl. <strong>SC2-ben</strong> és <strong>HS-ben</strong> is indulhat, és a két eredmény <strong>függetlenül</strong> számít a megfelelő szakasz szabályai szerint (SC2-nél a két legjobb helyezés súlyozása, lásd 4.2; SC:R, WC3 és HS esetén játékonként a legjobb helyezés, lásd 4.3).</p>
+                <h3 class="szabalyzat__subsection">3.2 Játékosok igazolása és határidő</h3>
+                <p>A <strong>partner csapatok</strong> <strong>új játékosokat</strong> a Főszakasz <strong>első hivatalos mérkőzésének kezdetéig</strong> igazolhatnak játékonként. <strong>Nincs előírt maximális</strong> létszám játékonként — a csapat döntése, hány játékost visz az adott címre, a határidő betartása mellett. A pontos időpontot játékonként a szervezők közlik.</p>
+                <p>A játékonkénti korlátlan igazolhatóság ellenére a <strong>pontszámítási szabályok csak a jelen szabályzatban meghatározott számú eredményt</strong> veszik figyelembe (lásd 4. fejezet); ezért a nagyobb létszám <strong>önmagában nem jelent automatikus pontelőnyt</strong>.</p>
+                <h3 class="szabalyzat__subsection">3.3 Ha a csapat SC2-játékosa(i) nem jutnak be a Főszakaszba</h3>
+                <p>Ha az igazolt <strong>SC2-játékos(ok)</strong> egyike sem jut be a Főszakaszba, a csapatnak a Főszakasz <strong>első hivatalos mérkőzésének kezdetéig</strong> lehetősége van olyan, <strong>még szabadon igazolható</strong> játékost leigazolni, aki a Főszakaszban szerepel. <strong>Az igazolás érvényességéhez a szervezők jóváhagyása szükséges.</strong> Ha e határidőig ilyen igazolás nem történik meg, a csapat <strong>továbbra is részt vesz</strong> a Club Cup pontversenyben, de <strong>SC2-ből 0 helyezési pont</strong> számít; a többi játékból (SC:R, WC3, HS) a 4. fejezet szerinti szabályok érvényesek.</p>
             </section>
 
             <!-- 4. Pontgyűjtés -->
             <section class="szabalyzat__section" id="pontgyujtes">
                 <h2 class="szabalyzat__section-title">4) Pontgyűjtés és ranglista szabályzat</h2>
-                <h3 class="szabalyzat__subsection">4.1 Pontgyűjtés alapelve</h3>
-                <p>Minden Főszakasz helyezés pontot ér a megadott ponttábla szerint. A csapat ranglistapontja a játékokból szerzett pontok összege.</p>
-                <h3 class="szabalyzat__subsection">4.2 Hány játékos pontja számít? (beszámítási szabályok)</h3>
+                <h3 class="szabalyzat__subsection">4.1 Alapelv</h3>
+                <p>Minden <strong>Főszakasz</strong>-helyezés a <a href="#ponttablak">pontszerzési táblázat</a> szerint <strong>helyezési pontot</strong> (P) eredményez. Selejtező vagy kvalifikáció <strong>önmagában</strong> nem ad helyezési pontot a Club Cupban.</p>
+                <p>A csapat <strong>Club Cup összpontja</strong> a szabály szerint kiszámolt <strong>SC2 csapatpont</strong> (lásd 4.2), valamint az <strong>SC:R</strong>, <strong>WC3</strong> és <strong>HS</strong> játékokból származó (játékonként a legjobb helyezés szerinti) pontok összege (lásd 4.3).</p>
+                <h3 class="szabalyzat__subsection">4.2 StarCraft II (SC2) — két eredmény, súlyozva</h3>
+                <p>Az SC2 <strong>Főszakaszába bejutott</strong>, csapatra igazolt játékosok közül a <strong>két legjobb</strong> helyezés pontjai számítanak:</p>
+                <p><strong>SC2<sub>csapat</sub> = P<sub>(1.)</sub> + 0,5 × P<sub>(2.)</sub></strong></p>
                 <ul>
-                    <li><strong>StarCraft II (kötelező):</strong> Csak a csapat legjobb SC2-helyezése számít → 1 játékos pontja.</li>
-                    <li><strong>StarCraft: Remastered (Top 4 / Top 8):</strong> Csak a csapat legjobb SC1-helyezése számít → 1 játékos pontja.</li>
-                    <li><strong>Warcraft III és Hearthstone (Top 8):</strong> Alapesetben csak a csapat legjobb helyezése számít → 1 játékos pontja.</li>
+                    <li>P<sub>(1.)</sub> = a <strong>legjobb</strong> helyezés szerinti pont az SC2 táblázatból (4.5, első táblázat).</li>
+                    <li>P<sub>(2.)</sub> = a <strong>második legjobb</strong> helyezés szerinti pont ugyanebből a táblázatból. Ha csak <strong>egy</strong> játékos jut be a Főszakaszba, vagy nincs második játékos: <strong>P<sub>(2.)</sub> = 0</strong>.</li>
+                    <li>Aki nem jut be a Főszakaszba, nem ad helyezési pontot (SC2-ben ilyenkor legfeljebb egy helyezés számíthat).</li>
                 </ul>
-                <h3 class="szabalyzat__subsection">4.3 Kompenzációs „dupla beszámítás” szabály</h3>
-                <p>Ha a csapat nem tudott indulni egy vagy több játékban (pl. nincs SC1 játékos), jogosult pontkompenzációra:</p>
-                <ul>
-                    <li>Mindig csak 1 játékban lehet dupla beszámítás.</li>
-                    <li>A kijelölt játékban 2 játékos pontja összeadódik (a két legjobb eredmény).</li>
-                    <li>StarCraft II-ben továbbra is mindig csak 1 pontszám számít (SC2 sosem dupla).</li>
-                    <li><strong>Automatikus dupla beszámítás 2 játék esetén:</strong> Ha a csapat pontosan 2 játékban indul (SC2 + 1 másik játék), a nem-SC2 játék automatikusan dupla beszámítású. Ez hátrányt is jelent: így max. 3 eredmény számít a 4 helyett.</li>
-                </ul>
-                <h3 class="szabalyzat__subsection">4.4 Ponttábla</h3>
+                <p class="szabalyzat__note"><strong>Példa:</strong> Játékos A: 3–4. hely → 55 pont; Játékos B: 5–8. hely → 35 pont → SC2<sub>csapat</sub> = 55 + 0,5×35 = <strong>72,5</strong> pont.</p>
+                <h3 class="szabalyzat__subsection">4.3 SC2-n kívüli játékok (SC:R, WC3, HS) — csak a legjobb játékos</h3>
+                <p><strong>SC:R</strong>, <strong>WC3</strong> és <strong>HS</strong> esetén játékonként csak a csapat <strong>egy</strong> eredménye számít: a <strong>legjobb Főszakasz-helyezésű</strong> igazolt játékos helyezési pontja a <a href="#ponttablak">pontszerzési táblázat</a> szerint (a második táblázat, azonos skála mindhárom címre). Ha a játékban nincs Főszakaszba jutott igazolt játékos: <strong>0 pont</strong> abból a játékból.</p>
+                <h3 class="szabalyzat__subsection">4.4 Összpontszám</h3>
+                <p>A <strong>Club Cup összpontja</strong> = az <strong>SC2 csapatpont</strong> (4.2) <strong>+</strong> az <strong>SC:R</strong> játékból beszámító legjobb pont <strong>+</strong> a <strong>WC3</strong> legjobb pont <strong>+</strong> a <strong>HS</strong> legjobb pont. A számítás <strong>kerekítés nélkül</strong> történik; a <strong>ranglistán</strong> a Club Cup összpont <strong>tizedes formában</strong> jelenik meg, <strong>legfeljebb egy tizedesjegy</strong> pontossággal.</p>
+                <p class="szabalyzat__note"><strong>Példa számítás:</strong> SC2 csapatpont (4.2 szerint): játékos A 3–4. hely → 55 pont; játékos B 5–8. hely → 35 pont → 55 + 0,5×35 = <strong>72,5</strong>. SC:R legjobb pont: 50. WC3 legjobb pont: 28. HS legjobb pont: 18. <strong>Club Cup összpont</strong> = 72,5 + 50 + 28 + 18 = <strong>168,5</strong> pont.</p>
+                <h3 class="szabalyzat__subsection" id="ponttablak">4.5 Ponttáblák (Főszakasz helyezés)</h3>
                 <div class="szabalyzat__tables">
                     <div class="szabalyzat__table-wrap">
-                        <h4 class="szabalyzat__table-title">StarCraft II (kiemelt pontozás)</h4>
+                        <h4 class="szabalyzat__table-title">StarCraft II — fő esemény (magasabb súly)</h4>
                         <table class="szabalyzat__table">
                             <tbody>
                                 <tr><td>1. hely</td><td>100</td></tr>
                                 <tr><td>2. hely</td><td>75</td></tr>
-                                <tr><td>3. hely</td><td>55</td></tr>
-                                <tr><td>4. hely</td><td>45</td></tr>
-                                <tr><td>5. hely</td><td>35</td></tr>
-                                <tr><td>6. hely</td><td>30</td></tr>
-                                <tr><td>7. hely</td><td>25</td></tr>
-                                <tr><td>8. hely</td><td>20</td></tr>
+                                <tr><td>3–4. hely</td><td>55</td></tr>
+                                <tr><td>5–8. hely</td><td>35</td></tr>
                             </tbody>
                         </table>
                     </div>
                     <div class="szabalyzat__table-wrap">
-                        <h4 class="szabalyzat__table-title">SC: Remastered / WC3 / Hearthstone</h4>
+                        <h4 class="szabalyzat__table-title">SC:R / WC3 / HS — azonos skála</h4>
                         <table class="szabalyzat__table">
                             <tbody>
-                                <tr><td>1. hely</td><td>60</td></tr>
-                                <tr><td>2. hely</td><td>45</td></tr>
-                                <tr><td>3. hely</td><td>33</td></tr>
-                                <tr><td>4. hely</td><td>27</td></tr>
-                                <tr><td>5. hely</td><td>21</td></tr>
-                                <tr><td>6. hely</td><td>18</td></tr>
-                                <tr><td>7. hely</td><td>15</td></tr>
-                                <tr><td>8. hely</td><td>12</td></tr>
+                                <tr><td>1. hely</td><td>50</td></tr>
+                                <tr><td>2. hely</td><td>38</td></tr>
+                                <tr><td>3–4. hely</td><td>28</td></tr>
+                                <tr><td>5–8. hely</td><td>18</td></tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <p class="szabalyzat__note">StarCraft: Remastered esetén a nevezők számától függően Top 4 (1–4. hely) vagy Top 8 (1–8. hely) értelmezett.</p>
-                <h3 class="szabalyzat__subsection">4.5 Holtverseny (tie-break)</h3>
-                <p>Azonos összpont esetén: (1) magasabb SC2 pont / jobb SC2-helyezés, (2) több 1. hely összesítve, (3) több Top4 összesítve, (4) szervezői döntés (rendkívüli esetben).</p>
+                <h3 class="szabalyzat__subsection">4.6 Holtverseny (tie-break)</h3>
+                <p>Azonos <strong>Club Cup összpont</strong> esetén a sorrend megállapítása:</p>
+                <ol>
+                    <li><strong>Több 1. hely</strong> összesítve az összes pontszerző játék Főszakaszában.</li>
+                    <li>Ha továbbra is döntetlen: <strong>magasabb SC2 csapatpont</strong> (4.2 szerinti P<sub>(1.)</sub> + 0,5×P<sub>(2.)</sub>).</li>
+                    <li>Ha továbbra is döntetlen: <strong>több 2. hely</strong> összesítve az összes pontszerző játék Főszakaszában.</li>
+                    <li>Ha továbbra is döntetlen: <strong>több 3–4. hely</strong> összesítve az összes pontszerző játék Főszakaszában.</li>
+                    <li>Ha a fenti tie-break lépések után is <strong>holtverseny</strong> marad fenn, a végső sorrendet <strong>sorsolás</strong> dönti el. A sorsolás szabályait és menetét a szervezők a szezonban előre közlik.</li>
+                </ol>
             </section>
 
             <!-- 5. Média -->
             <section class="szabalyzat__section" id="media">
                 <h2 class="szabalyzat__section-title">5) Média, megjelenés, brand anyagok</h2>
-                <h3 class="szabalyzat__subsection">5.1 Mez / csapatmegjelenés (WORTEX média)</h3>
-                <p>A csapatok kötelesek mez/egységes csapatmegjelenést biztosítani a játékosoknak WORTEX média szereplésekhez (interjú, fotó, promóanyag, hivatalos tartalom). Ennek célja egységes, profi megjelenés és a Club Cup értékének növelése.</p>
+                <h3 class="szabalyzat__subsection">5.1 Csapatmez és megjelenés (WORTEX média)</h3>
+                <p>A <strong>partner csapatok</strong> kötelesek <strong>csapatmezt</strong> vagy <strong>egységes, a csapat által jóváhagyott versenymegjelenést</strong> biztosítani a játékosok számára a <strong>WORTEX média-megjelenéseihez</strong> (interjú, fotó, promóanyag, hivatalos stream / színpadi megjelenés, a szervezők által kért tartalmak). A csapatmezhez és a hivatalos WORTEX megjelenéshez kapcsolódó kötelezettségen túl minden egyéb juttatás vagy megállapodás a <strong>játékos és a csapat között</strong> egyénileg egyeztethető.</p>
                 <h3 class="szabalyzat__subsection">5.2 Logó és csapatanyagok</h3>
-                <p>A partner csapat köteles jó minőségű logót biztosítani a weboldali és marketing megjelenésekhez (preferált: SVG/AI vagy nagy felbontású, átlátszó PNG). Ajánlott: hivatalos csapatnév, rövid név, social linkek megadása csapatprofilhoz.</p>
+                <p>A <strong>partner csapat</strong> köteles jó minőségű logót biztosítani a weboldali és marketing megjelenésekhez (preferált: SVG/AI vagy nagy felbontású, átlátszó PNG). Ajánlott: hivatalos csapatnév, rövid név, social linkek megadása csapatprofilhoz.</p>
             </section>
 
             <!-- 6. Közvetítés -->
             <section class="szabalyzat__section" id="kozvetites">
                 <h2 class="szabalyzat__section-title">6) Közvetítési szabályzat</h2>
-                <h3 class="szabalyzat__subsection">6.1 Élő közvetítés jogok</h3>
-                <ul>
-                    <li>A WORTEX Főszakasz élő közvetítésére a WORTEX partnereinek van joga.</li>
-                    <li>Élő közvetítés nem engedélyezett sem harmadik félnek, sem játékos POV stream formában előzetes írásos engedély nélkül.</li>
-                    <li>Közvetítési jogok/együttműködés: kapcsolatfelvétel szükséges a szervezőkkel.</li>
-                </ul>
-                <p class="szabalyzat__note">A tiltás az élő közvetítésekre vonatkozik (nem a mérkőzés utáni replay/összefoglaló videóra).</p>
+                <h3 class="szabalyzat__subsection">6.1 Élő közvetítés</h3>
+                <p>Előzetes írásos engedély nélkül <strong>tilos</strong> az adott <strong>hivatalos mérkőzések</strong> élő közvetítése bármilyen platformon, ideértve a játékos <strong>POV stream</strong>et is. Ez a tiltás <strong>nem terjed ki</strong> a <strong>hivatalos mérkőzés</strong> után közzétett replay-, highlight- vagy összefoglaló tartalmakra, amennyiben azok nem sértik a WORTEX közvetítési és médiaérdekeit.</p>
+                <p>Közvetítési jogok és együttműködés: kapcsolatfelvétel a szervezőkkel.</p>
             </section>
 
             <!-- 7. Fair-play -->
             <section class="szabalyzat__section" id="fairplay">
                 <h2 class="szabalyzat__section-title">7) Fair-play és büntetések</h2>
                 <h3 class="szabalyzat__subsection">7.1 Tisztességes verseny</h3>
-                <p>Tilos: csalás, exploit, streamsniping, szabálykerülés; toxikus/zaklató magatartás, gyűlöletkeltés; match fixing, bundázás, szándékos eredmény.</p>
-                <h3 class="szabalyzat__subsection">7.2 Büntetések (rövid lista)</h3>
-                <p>A szervezők a súlyosságtól függően alkalmazhatják: figyelmeztetés; pontlevonás (játékos vagy csapat szinten); eredmény érvénytelenítése (mérkőzés / torna); kizárás az adott játékból vagy a Club Cupból; partner státusz felülvizsgálata (súlyos vagy ismételt esetben).</p>
+                <p>Tilos: csalás, exploit, streamsniping, szabálykerülés; toxikus/zaklató magatartás, gyűlöletkeltés; match fixing.</p>
+                <h3 class="szabalyzat__subsection">7.2 Büntetések</h3>
+                <p>A szervezők a súlyosságtól függően alkalmazhatják: figyelmeztetés; pontlevonás (játékos vagy csapat szinten); eredmény érvénytelenítése (hivatalos mérkőzés / torna); kizárás az adott játékból vagy a Club Cupból; partner státusz felülvizsgálata (súlyos vagy ismételt esetben).</p>
+                <p>A büntetés <strong>az eset súlyosságától és jellegétől függően</strong> érintheti az adott játék eredményét, a helyezési pontokat, illetve súlyos esetben a teljes Club Cup összpontot is.</p>
             </section>
 
             <!-- 8. Admin -->
             <section class="szabalyzat__section" id="admin">
                 <h2 class="szabalyzat__section-title">8) Adminisztráció és vitás esetek</h2>
                 <h3 class="szabalyzat__subsection">8.1 Kommunikáció</h3>
-                <p>A hivatalos kommunikáció kijelölt csapatkontakt (kapitány/menedzser) útján történik.</p>
-                <h3 class="szabalyzat__subsection">8.2 Vitás esetek és módosítás</h3>
-                <p>Vitás esetben a szervezők döntése a mérvadó. A szervezők fenntartják a jogot a szabályzat finomítására a verseny integritásának megőrzése érdekében, a csapatok előzetes tájékoztatásával.</p>
-                <p class="szabalyzat__note">A szervezők fenntartják a jogot a jelen szabályzat bármely pontjának későbbi módosítására vagy kiegészítésére — ideértve a lebonyolítási formátumok, mezőnyméretek és időpontok változtatását is. A lényeges változásokról a résztvevőket megfelelő időben tájékoztatják.</p>
+                <p>A hivatalos kommunikáció kijelölt csapatkontakt (kapitány/menedzser) útján történik a <a href="https://wortexgg.hu/discord" target="_blank" rel="noopener noreferrer">WORTEX Discord</a> szerveren.</p>
+                <h3 class="szabalyzat__subsection">8.2 Vitás esetek és szabályzatmódosítás</h3>
+                <p>Vitás esetben a szervezők döntése a mérvadó.</p>
+                <p>A szervezők fenntartják a jogot a <strong>jelen szabályzat módosítására vagy kiegészítésére</strong>, amennyiben ez a verseny <strong>integritásának</strong>, <strong>lebonyolításának</strong> vagy <strong>egyértelműségének</strong> megőrzése érdekében szükséges. A lényeges változásokról a résztvevőket megfelelő időben tájékoztatják.</p>
             </section>
 
             <div class="szabalyzat__back">
