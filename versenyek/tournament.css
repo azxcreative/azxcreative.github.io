@@ -1458,6 +1458,70 @@ button {
     margin-bottom: var(--spacing-xs);
 }
 
+.szabalyzat__section--fogalmak {
+    margin-top: var(--spacing-xl);
+    background: rgba(0, 200, 255, 0.06);
+    border: 1px solid rgba(0, 200, 255, 0.22);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+}
+
+.szabalyzat__section--fogalmak .szabalyzat__subsection {
+    margin-top: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.szabalyzat__lead {
+    font-size: clamp(14px, 1.45vw, 16px);
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 0.92);
+    margin-bottom: var(--spacing-md);
+}
+
+.szabalyzat__fogalmak-list {
+    margin: 0 0 var(--spacing-md);
+    padding-left: 1.25em;
+}
+
+.szabalyzat__fogalmak-list li {
+    margin-bottom: var(--spacing-xs);
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.szabalyzat__dl {
+    margin: 0;
+}
+
+.szabalyzat__dl dt {
+    font-weight: 700;
+    color: var(--cyan);
+    margin-top: var(--spacing-sm);
+    font-size: clamp(14px, 1.4vw, 16px);
+}
+
+.szabalyzat__dl dt:first-of-type {
+    margin-top: 0;
+}
+
+.szabalyzat__dl dd {
+    margin: 0 0 var(--spacing-sm) 0;
+    padding-left: 0;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.szabalyzat__tldr-intro {
+    font-size: clamp(14px, 1.4vw, 15px);
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: var(--spacing-sm);
+}
+
+.szabalyzat__tldr-intro a {
+    color: var(--cyan);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
 .szabalyzat__section--tldr {
     margin-top: var(--spacing-xl);
 }

@@ -34,6 +34,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="tournament.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.1.0/dist/cookieconsent.css">
+    <style>
+        #ranglista.section { min-height: auto; padding: var(--spacing-lg) 0; }
+        #ranglista .section__title { font-size: clamp(24px, 3.5vw, 36px); margin-bottom: var(--spacing-md); }
+        #ranglista .tabella__list { gap: 0.5rem; margin-top: var(--spacing-md); }
+        #ranglista .tabella__row { grid-template-columns: 44px 52px 1fr auto; gap: var(--spacing-sm); padding: 0.5rem var(--spacing-md); }
+        #ranglista .tabella__helyezes { font-size: clamp(16px, 1.8vw, 20px); }
+        #ranglista .tabella__logo { width: 40px; height: 40px; }
+        #ranglista .tabella__logo img[src*="AER-logo"] { width: 80%; height: 80%; object-fit: contain; }
+        #ranglista .tabella__name { font-size: clamp(14px, 1.5vw, 16px); }
+        #ranglista .tabella__pont { font-size: clamp(14px, 1.5vw, 16px); }
+        #ranglista .tabella__cta { margin-top: var(--spacing-md) !important; }
+        #ranglista .container { max-width: 560px; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -44,7 +57,8 @@
             </div>
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#lebonyolitas" class="nav__link">Lebonyolítás</a></li>
-                <li><a href="#sorsolas" class="nav__link">Sorsolás</a></li>
+                <li><a href="#ranglista" class="nav__link">Ranglista</a></li>
+                <!-- <li><a href="#sorsolas" class="nav__link">Sorsolás</a></li> -->
                 <li><a href="#jelentkezes" class="nav__link">Jelentkezés</a></li>
                 <li><a href="#nyeremenyek" class="nav__link">Nyeremények</a></li>
                 <li><a href="#kozvetites" class="nav__link">Közvetítés</a></li>
@@ -191,8 +205,76 @@
         </div>
     </section>
 
-    <!-- Sorsolás Section -->
-    <section class="section" id="sorsolas">
+    <!-- Ranglista Section (WRTX pont) -->
+    <section class="section tabella" id="ranglista">
+        <div class="container">
+            <h2 class="section__title">WRTX pont ranglista</h2>
+            <div class="tabella__list">
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">1</span>
+                    <div class="tabella__logo">
+                        <img src="img/AER-logo.png" alt="AER">
+                    </div>
+                    <span class="tabella__name">Psz</span>
+                    <span class="tabella__pont">50</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">2</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">WiNtER</span>
+                    <span class="tabella__pont">40</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">3</span>
+                    <div class="tabella__logo">
+                        <img src="img/zentris-esport-csapat.webp" alt="Zentris">
+                    </div>
+                    <span class="tabella__name">Panda</span>
+                    <span class="tabella__pont">30</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">4</span>
+                    <div class="tabella__logo">
+                        <img src="img/AER-logo.png" alt="AER">
+                    </div>
+                    <span class="tabella__name">JuGGer</span>
+                    <span class="tabella__pont">20</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">5</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">AZTEX</span>
+                    <span class="tabella__pont">10</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">6</span>
+                    <div class="tabella__logo">
+                        <img src="img/zentris-esport-csapat.webp" alt="Zentris">
+                    </div>
+                    <span class="tabella__name">Milkaa</span>
+                    <span class="tabella__pont">10</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">7</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">8</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">TBD</span>
+                    <span class="tabella__pont">–</span>
+                </div>
+            </div>
+            <div class="tabella__cta" style="text-align: center; margin-top: var(--spacing-lg);">
+                <button type="button" class="btn btn--secondary" aria-label="Még több játékos megjelenítése">Még több megjelenítése</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sorsolás Section (hidden for now) -->
+    <section class="section" id="sorsolas" style="display: none;">
         <div class="container">
             <h2 class="section__title">Sorsolás</h2>
             <style>
@@ -374,19 +456,19 @@
                 <div class="playoffs-bracket">
                     <div class="playoff-branch">
                         <div class="playoff-match">
-                            <div class="playoff-title">Semi-final 1 (BO5)</div>
+                            <div class="playoff-title">Semi-final 1 (BO3)</div>
                             <div class="playoff-player">TBD</div>
                             <div class="playoff-player">TBD</div>
                         </div>
                         <div class="playoff-match">
-                            <div class="playoff-title">Semi-final 2 (BO5)</div>
+                            <div class="playoff-title">Semi-final 2 (BO3)</div>
                             <div class="playoff-player">TBD</div>
                             <div class="playoff-player">TBD</div>
                         </div>
                     </div>
                     <div class="playoff-connector" aria-hidden="true"></div>
                     <div class="playoff-match playoff-match--grand">
-                        <div class="playoff-title playoff-title--gold">Grand-final (Gamerland, Budapest) (BO7)</div>
+                        <div class="playoff-title playoff-title--gold">Grand-final (Gamerland, Budapest) (BO3)</div>
                         <div class="playoff-player">TBD</div>
                         <div class="playoff-player">TBD</div>
                     </div>
