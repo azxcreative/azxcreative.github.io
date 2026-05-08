@@ -754,14 +754,8 @@ button {
 
 .versenyek__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-lg);
-}
-
-@media (max-width: 1200px) {
-    .versenyek__grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 @media (max-width: 768px) {
@@ -2540,4 +2534,16 @@ button {
 }
 #cc-main .cm__btn--primary {
     background: var(--blue) !important;
+}
+
+/* Cookie szövegek olvashatósága */
+#cc-main .cm__title,
+#cc-main .pm__title {
+    color: #ffffff !important;
+}
+
+#cc-main .cm__desc,
+#cc-main .pm__section-desc,
+#cc-main .pm__section-title {
+    color: #e6edf7 !important;
 }
