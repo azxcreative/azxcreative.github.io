@@ -43,6 +43,20 @@
         #ranglista .tabella__logo { width: 40px; height: 40px; }
         #ranglista .tabella__logo img[src*="AER-logo"] { width: 80%; height: 80%; object-fit: contain; }
         #ranglista .tabella__logo img[src*="HEPA-logo"] { width: 80%; height: 80%; object-fit: contain; }
+        #ranglista .tabella__logo img[src*="OW-logo"] { width: 80%; height: 80%; object-fit: contain; }
+        #ranglista .tabella__qual-badge {
+            margin-left: 0.35rem;
+            padding: 0.12rem 0.45rem;
+            font-size: 0.62rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            color: #86efac;
+            background: rgba(34, 197, 94, 0.18);
+            border: 1px solid rgba(34, 197, 94, 0.45);
+            border-radius: 4px;
+            vertical-align: middle;
+            white-space: nowrap;
+        }
         #ranglista .tabella__name { font-size: clamp(14px, 1.5vw, 16px); }
         #ranglista .tabella__pont { font-size: clamp(14px, 1.5vw, 16px); }
         #ranglista .tabella__cta { margin-top: var(--spacing-md) !important; }
@@ -232,12 +246,42 @@
             <div class="tabella__list" id="ranglista-tabella-list">
                 <div class="tabella__row">
                     <span class="tabella__helyezes">1</span>
+                    <div class="tabella__logo">
+                        <img src="img/OW-logo.png" alt="Orion Wanderers">
+                    </div>
+                    <span class="tabella__name">Nihed<span class="tabella__qual-badge" title="WORTEX-re kvalifikált">kvalifikált</span></span>
+                    <span class="tabella__pont">300</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">2</span>
+                    <div class="tabella__logo">
+                        <img src="img/AER-logo.png" alt="AER">
+                    </div>
+                    <span class="tabella__name">Psz<span class="tabella__qual-badge" title="WORTEX-re kvalifikált">kvalifikált</span></span>
+                    <span class="tabella__pont">220</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">3</span>
+                    <div class="tabella__logo">
+                        <img src="img/AER-logo.png" alt="AER">
+                    </div>
+                    <span class="tabella__name">Freeman<span class="tabella__qual-badge" title="WORTEX-re kvalifikált">kvalifikált</span></span>
+                    <span class="tabella__pont">210</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">4</span>
                     <div class="tabella__logo tabella__logo--tbd"></div>
                     <span class="tabella__name">Order</span>
                     <span class="tabella__pont">160</span>
                 </div>
                 <div class="tabella__row">
-                    <span class="tabella__helyezes">2</span>
+                    <span class="tabella__helyezes">4</span>
+                    <div class="tabella__logo tabella__logo--tbd"></div>
+                    <span class="tabella__name">RobbyG<span class="tabella__qual-badge" title="WORTEX-re kvalifikált">kvalifikált</span></span>
+                    <span class="tabella__pont">160</span>
+                </div>
+                <div class="tabella__row">
+                    <span class="tabella__helyezes">6</span>
                     <div class="tabella__logo">
                         <img src="img/zentris-esport-csapat.webp" alt="Zentris">
                     </div>
@@ -245,53 +289,39 @@
                     <span class="tabella__pont">100</span>
                 </div>
                 <div class="tabella__row">
-                    <span class="tabella__helyezes">2</span>
+                    <span class="tabella__helyezes">7</span>
                     <div class="tabella__logo">
-                        <img src="img/AER-logo.png" alt="AER">
+                        <img src="img/zentris-esport-csapat.webp" alt="Zentris">
                     </div>
-                    <span class="tabella__name">Psz</span>
-                    <span class="tabella__pont">100</span>
-                </div>
-                <div class="tabella__row">
-                    <span class="tabella__helyezes">4</span>
-                    <div class="tabella__logo">
-                        <img src="img/AER-logo.png" alt="AER">
-                    </div>
-                    <span class="tabella__name">Freeman</span>
+                    <span class="tabella__name">mOsTeN<span class="tabella__qual-badge" title="WORTEX-re kvalifikált">kvalifikált</span></span>
                     <span class="tabella__pont">90</span>
                 </div>
                 <div class="tabella__row">
-                    <span class="tabella__helyezes">5</span>
+                    <span class="tabella__helyezes">8</span>
                     <div class="tabella__logo">
                         <img src="img/zentris-esport-csapat.webp" alt="Zentris">
                     </div>
                     <span class="tabella__name">Milkaa</span>
                     <span class="tabella__pont">80</span>
                 </div>
-                <div class="tabella__row">
-                    <span class="tabella__helyezes">6</span>
-                    <div class="tabella__logo tabella__logo--tbd"></div>
-                    <span class="tabella__name">RobbyG</span>
-                    <span class="tabella__pont">70</span>
-                </div>
-                <div class="tabella__row">
-                    <span class="tabella__helyezes">7</span>
-                    <div class="tabella__logo">
-                        <img src="img/AER-logo.png" alt="AER">
-                    </div>
-                    <span class="tabella__name">JuGGer</span>
-                    <span class="tabella__pont">60</span>
-                </div>
-                <div class="tabella__row">
-                    <span class="tabella__helyezes">8</span>
-                    <div class="tabella__logo tabella__logo--tbd"></div>
-                    <span class="tabella__name">WiNtER</span>
-                    <span class="tabella__pont">50</span>
-                </div>
                 <div class="ranglista-extra-wrap" id="ranglista-extra-wrap">
                     <div class="ranglista-extra-inner">
                         <div class="tabella__row">
                             <span class="tabella__helyezes">9</span>
+                            <div class="tabella__logo">
+                                <img src="img/AER-logo.png" alt="AER">
+                            </div>
+                            <span class="tabella__name">JuGGer</span>
+                            <span class="tabella__pont">60</span>
+                        </div>
+                        <div class="tabella__row">
+                            <span class="tabella__helyezes">10</span>
+                            <div class="tabella__logo tabella__logo--tbd"></div>
+                            <span class="tabella__name">WiNtER</span>
+                            <span class="tabella__pont">50</span>
+                        </div>
+                        <div class="tabella__row">
+                            <span class="tabella__helyezes">11</span>
                             <div class="tabella__logo">
                                 <img src="img/zentris-esport-csapat.webp" alt="Zentris">
                             </div>
@@ -299,7 +329,7 @@
                             <span class="tabella__pont">35</span>
                         </div>
                         <div class="tabella__row">
-                            <span class="tabella__helyezes">10</span>
+                            <span class="tabella__helyezes">12</span>
                             <div class="tabella__logo">
                                 <img src="img/HEPA-logo.png" alt="HEPA">
                             </div>
@@ -307,7 +337,7 @@
                             <span class="tabella__pont">25</span>
                         </div>
                         <div class="tabella__row">
-                            <span class="tabella__helyezes">11</span>
+                            <span class="tabella__helyezes">13</span>
                             <div class="tabella__logo">
                                 <img src="img/zentris-esport-csapat.webp" alt="Zentris">
                             </div>
@@ -315,7 +345,7 @@
                             <span class="tabella__pont">10</span>
                         </div>
                         <div class="tabella__row">
-                            <span class="tabella__helyezes">11</span>
+                            <span class="tabella__helyezes">13</span>
                             <div class="tabella__logo">
                                 <img src="img/HEPA-logo.png" alt="HEPA">
                             </div>
@@ -323,7 +353,7 @@
                             <span class="tabella__pont">10</span>
                         </div>
                         <div class="tabella__row">
-                            <span class="tabella__helyezes">11</span>
+                            <span class="tabella__helyezes">13</span>
                             <div class="tabella__logo tabella__logo--tbd"></div>
                             <span class="tabella__name">Sephisto</span>
                             <span class="tabella__pont">10</span>
