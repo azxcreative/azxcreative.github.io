@@ -1600,7 +1600,7 @@ button {
    ============================================ */
 .partnerek__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: var(--spacing-lg);
     width: 100%;
     max-width: 1120px;
@@ -1622,6 +1622,14 @@ button {
     justify-content: center;
     transition: all var(--transition);
     text-decoration: none;
+}
+
+button.partner-logo {
+    width: 100%;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    appearance: none;
 }
 
 .partner-logo img {
@@ -2321,6 +2329,67 @@ button {
     background-clip: text;
     margin: 0 0 var(--spacing-lg);
     padding-right: 40px;
+}
+
+.modal__content--partner {
+    max-width: 640px;
+}
+
+.modal__header-logo {
+    margin: 0 0 var(--spacing-lg);
+}
+
+.modal__header-logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.modal__location {
+    margin-top: var(--spacing-lg);
+}
+
+.modal__location-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    color: var(--cyan);
+    font-size: clamp(13px, 1.4vw, 15px);
+    font-weight: 600;
+    transition: all var(--transition);
+}
+
+.modal__location-link:hover {
+    border-color: var(--blue);
+    background: rgba(11, 107, 255, 0.12);
+    color: var(--white);
+}
+
+.modal__location-link svg {
+    flex-shrink: 0;
+}
+
+.modal__map {
+    width: 100%;
+    height: 160px;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+}
+
+.modal__map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .modal__text p {

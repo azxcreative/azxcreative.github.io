@@ -291,6 +291,46 @@ document.addEventListener('keydown', (e) => {
 });
 
 // ============================================
+// HammerTime Cafe Partner Modal
+// ============================================
+const hammertimePartnerBtn = document.getElementById('hammertime-partner-btn');
+const hammertimeModal = document.getElementById('hammertime-modal');
+const hammertimeModalClose = document.getElementById('hammertime-modal-close');
+const hammertimeModalOverlay = document.getElementById('hammertime-modal-overlay');
+
+function openHammertimeModal() {
+    if (hammertimeModal) {
+        hammertimeModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeHammertimeModal() {
+    if (hammertimeModal) {
+        hammertimeModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+if (hammertimePartnerBtn) {
+    hammertimePartnerBtn.addEventListener('click', openHammertimeModal);
+}
+
+if (hammertimeModalClose) {
+    hammertimeModalClose.addEventListener('click', closeHammertimeModal);
+}
+
+if (hammertimeModalOverlay) {
+    hammertimeModalOverlay.addEventListener('click', closeHammertimeModal);
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && hammertimeModal && hammertimeModal.classList.contains('active')) {
+        closeHammertimeModal();
+    }
+});
+
+// ============================================
 // Header Scroll Effect
 // ============================================
 const header = document.querySelector('.header');
