@@ -46,7 +46,7 @@
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#rolunk" class="nav__link">Rólunk</a></li>
                 <li><a href="#versenyek" class="nav__link">Versenyek</a></li>
-                <li><a href="#programok" class="nav__link">Programok</a></li>
+                <li><a href="#esemeny" class="nav__link">Esemény</a></li>
                 <li><a href="#tamogatas" class="nav__link">Támogatás</a></li>
                 <li><a href="#media" class="nav__link">Média</a></li>
                 <li><a href="#gyik" class="nav__link">GYIK</a></li>
@@ -65,6 +65,13 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
         </svg>
+    </a>
+
+    <!-- Floating Event Countdown -->
+    <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="floating-countdown" id="floating-countdown" aria-label="WORTEX esemény visszaszámláló">
+        <span class="floating-countdown__label">WORTEX 2026</span>
+        <span class="floating-countdown__time" id="floating-countdown-time">-- : -- : --</span>
+        <span class="floating-countdown__meta">nap : óra : perc</span>
     </a>
 
     <!-- Hero Section -->
@@ -198,58 +205,41 @@
         </div>
     </section>
 
-    <!-- Programok Section -->
-    <section class="section section--programok" id="programok">
-        <div class="container">
-            <h2 class="section__title">Programok</h2>
-            <p class="section__intro">
-                Nem csak verseny a WORTEX egy közösségi élmény. Ízelítő a programokból — a részletek hamarosan.
-            </p>
-            <div class="programok__grid">
-                <div class="program-card">
-                    <div class="program-card__icon">🎯</div>
-                    <h3 class="program-card__title">Kvíz &amp; kihívások</h3>
-                    <p class="program-card__description">Kvízjátékok és közönségkihívások, ahol a tudás és a gyors reflexek is számítanak.</p>
-                </div>
-                <div class="program-card">
-                    <div class="program-card__icon">🎁</div>
-                    <h3 class="program-card__title">Ajándékok &amp; meglepetések</h3>
-                    <p class="program-card__description">Nyeremények és apró meglepetések szerte a nap folyamán.</p>
-                </div>
-                <div class="program-card">
-                    <div class="program-card__icon">🤝</div>
-                    <h3 class="program-card__title">Közösségi élmények</h3>
-                    <p class="program-card__description">Hangulat, közös pillanatok és emlékek — nem csak a meccsek miatt érdemes jönni.</p>
-                </div>
-            </div>
-            <div class="programok__cta">
-                <a href="#" class="btn btn--primary btn--large programok__cta-btn">
-                    <span class="programok__cta-text">Részletes Programterv</span>
-                    <span class="programok__cta-hover">hamarosan</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
     <!-- Infók Section -->
-    <section class="section section--infok" id="infok">
+    <section class="section section--infok" id="esemeny">
         <div class="container">
             <h2 class="section__title">Esemény Részletei</h2>
+            <div class="event-details">
+                <div class="event-details__main">
+                    <h3 class="event-details__title">WORTEX 2026</h3>
+                    <p class="event-details__date">Augusztus 29. Szombat</p>
+                    <p class="event-details__location">Budapest, Gamerland</p>
+                    <div class="event-details__actions">
+                        <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">Facebook esemény</a>
+                    </div>
+                </div>
+                <div class="event-details__countdown" aria-label="Visszaszámláló a WORTEX 2026 eseményig">
+                    <div class="event-details__countdown-card">
+                        <span id="details-countdown-days">--</span>
+                        <small>nap</small>
+                    </div>
+                    <div class="event-details__countdown-card">
+                        <span id="details-countdown-hours">--</span>
+                        <small>óra</small>
+                    </div>
+                    <div class="event-details__countdown-card">
+                        <span id="details-countdown-minutes">--</span>
+                        <small>perc</small>
+                    </div>
+                </div>
+                <ul class="event-details__program">
+                    <li><strong>StarCraft II</strong><small>Top 4</small></li>
+                    <li><strong>StarCraft: Brood War</strong><small>Grand Final</small></li>
+                    <li><strong>Hearthstone</strong><small>Grand Final</small></li>
+                    <li><strong>Közösségi programok</strong><small>Kvízek, kihívások, nyeremények</small></li>
+                </ul>
+            </div>
             <div class="infok__grid">
-                <div class="info-chip">
-                    <div class="info-chip__icon">📍</div>
-                    <div class="info-chip__content">
-                        <h3 class="info-chip__title">Helyszín</h3>
-                        <p class="info-chip__text">Budapest, Gamerland</p>
-                    </div>
-                </div>
-                <div class="info-chip">
-                    <div class="info-chip__icon">📅</div>
-                    <div class="info-chip__content">
-                        <h3 class="info-chip__title">Időpont</h3>
-                        <p class="info-chip__text">Augusztus 29. Szombat</p>
-                    </div>
-                </div>
                 <div class="info-chip">
                     <div class="info-chip__icon">🎫</div>
                     <div class="info-chip__content">
@@ -265,9 +255,12 @@
                     </div>
                 </div>
             </div>
-            <p class="infok__note">
-                Részletes menetrend hamarosan.
-            </p>
+            <div class="programok__cta">
+                <a href="#" class="btn btn--primary btn--large programok__cta-btn">
+                    <span class="programok__cta-text">Részletes Programterv</span>
+                    <span class="programok__cta-hover">hamarosan</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -335,27 +328,27 @@
             <div class="videok__grid">
                 <div class="video-card">
                     <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/Ds7iDUkiLvE/hqdefault.jpg" alt="Sport pszichológusos WRTX podcast">
+                        <img src="https://img.youtube.com/vi/XYCvUr9jhUg/hqdefault.jpg" alt="Panda: A magyar StarCraft csendes underdogja">
                     </div>
-                    <h3 class="video-card__title">Sport pszichológusos WRTX podcast</h3>
-                    <p class="video-card__description">Beszélgetés sportpszichológiáról, versenyhelyzetekről és mentális felkészülésről.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/Ds7iDUkiLvE?autoplay=1" aria-label="Megtekintés: Sport pszichológusos WRTX podcast">Megtekintés</button>
+                    <h3 class="video-card__title">Panda | Signature Series #1</h3>
+                    <p class="video-card__description">Panda története a magyar StarCraft közösségről, versenyekről, fejlődésről és a WORTEX-re készülésről.</p>
+                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/XYCvUr9jhUg?autoplay=1" aria-label="Megtekintés: Panda: A magyar StarCraft csendes underdogja">Megtekintés</button>
                 </div>
                 <div class="video-card">
                     <div class="video-card__thumbnail">
                         <img src="https://img.youtube.com/vi/5uovrb9a03c/hqdefault.jpg" alt="StarCraft itthon">
                     </div>
                     <h3 class="video-card__title">StarCraft itthon</h3>
-                    <p class="video-card__description">Hazai StarCraft közösség, versenyek és gondolatok a magyar színtérről.</p>
+                    <p class="video-card__description">Beszélgetés a hazai StarCraft közösségről, versenyekről, játékosokról és a magyar színtér jövőjéről.</p>
                     <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/5uovrb9a03c?autoplay=1" aria-label="Megtekintés: StarCraft itthon">Megtekintés</button>
                 </div>
                 <div class="video-card">
                     <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/qAlWEKNaV_I/hqdefault.jpg" alt="Psz vs Nihed Endgame döntő">
+                        <img src="https://img.youtube.com/vi/aCJ5aazvFdE/hqdefault.jpg" alt="StarCraft legend to business">
                     </div>
-                    <h3 class="video-card__title">Psz vs Nihed Endgame döntő</h3>
-                    <p class="video-card__description">WRTX Circuit StarCraft 2 döntő Psz és Nihed között.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/qAlWEKNaV_I?autoplay=1" aria-label="Megtekintés: Psz vs Nihed Endgame döntő">Megtekintés</button>
+                    <h3 class="video-card__title">StarCraft legend to business</h3>
+                    <p class="video-card__description">Cameleon útja a StarCraft hőskorától a WCG-n át a tech és e-commerce vállalkozások világáig.</p>
+                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/aCJ5aazvFdE?autoplay=1" aria-label="Megtekintés: StarCraft legend to business">Megtekintés</button>
                 </div>
             </div>
             <div class="videok__cta">
@@ -578,6 +571,50 @@
             <button class="video-modal__close" id="rolunk-video-modal-close" aria-label="Bezárás">&times;</button>
             <div class="video-placeholder" style="border-radius: 12px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
                 <iframe id="rolunk-video-modal-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- WORTEX Event Popup -->
+    <div class="event-popup active" id="wortex-event-popup" role="dialog" aria-modal="true" aria-labelledby="wortex-event-title">
+        <div class="event-popup__overlay" id="wortex-event-popup-overlay"></div>
+        <div class="event-popup__content">
+            <button class="event-popup__close" id="event-popup-close" type="button" aria-label="Bezárás">&times;</button>
+            <div class="event-popup__video">
+                <video autoplay muted loop playsinline>
+                    <source src="img/web-hero-loop.webm" type="video/webm">
+                </video>
+                <div class="event-popup__video-overlay"></div>
+            </div>
+            <div class="event-popup__body">
+                <p class="event-popup__eyebrow">WORTEX</p>
+                <h2 class="event-popup__title" id="wortex-event-title">Realms Unleashed</h2>
+                <p class="event-popup__date">Augusztus 29. Szombat</p>
+                <p class="event-popup__location">Budapest, Gamerland</p>
+                <div class="event-popup__countdown" aria-label="Visszaszámláló 2026. augusztus 29-ig">
+                    <div>
+                        <span id="event-countdown-days">--</span>
+                        <small>nap</small>
+                    </div>
+                    <div>
+                        <span id="event-countdown-hours">--</span>
+                        <small>óra</small>
+                    </div>
+                    <div>
+                        <span id="event-countdown-minutes">--</span>
+                        <small>perc</small>
+                    </div>
+                </div>
+                <ul class="event-popup__program">
+                    <li><strong>StarCraft II</strong><small>Top 4</small></li>
+                    <li><strong>StarCraft: Brood War</strong><small>Grand Final</small></li>
+                    <li><strong>Hearthstone</strong><small>Grand Final</small></li>
+                    <li><strong>Közösségi programok</strong><small>Kvízek, kihívások, nyeremények</small></li>
+                </ul>
+                <div class="event-popup__actions">
+                    <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">Facebook esemény</a>
+                    <button type="button" class="btn btn--ghost btn--large" id="event-popup-continue">Tovább a weboldalra</button>
+                </div>
             </div>
         </div>
     </div>

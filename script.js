@@ -352,25 +352,98 @@ window.addEventListener('scroll', () => {
 // Floating CTA Button - Show after Hero
 // ============================================
 const floatingCTA = document.querySelector('.floating-cta');
+const floatingCountdown = document.getElementById('floating-countdown');
 const heroSection = document.getElementById('hero');
 
 function toggleFloatingCTA() {
-    if (!floatingCTA || !heroSection) return;
+    if (!heroSection) return;
     
     const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-    const scrollPosition = window.pageYOffset + window.innerHeight;
+    const floatingElements = [floatingCTA, floatingCountdown].filter(Boolean);
     
     // Show button only after scrolling past hero section
     if (window.pageYOffset > heroBottom - window.innerHeight) {
-        floatingCTA.classList.add('visible');
+        floatingElements.forEach(element => element.classList.add('visible'));
     } else {
-        floatingCTA.classList.remove('visible');
+        floatingElements.forEach(element => element.classList.remove('visible'));
     }
 }
 
 window.addEventListener('scroll', toggleFloatingCTA);
 window.addEventListener('resize', toggleFloatingCTA);
 toggleFloatingCTA(); // Initial check
+
+// ============================================
+// WORTEX Event Popup + Countdown
+// ============================================
+const eventDate = new Date('2026-08-29T00:00:00+02:00');
+const eventPopup = document.getElementById('wortex-event-popup');
+const eventPopupOverlay = document.getElementById('wortex-event-popup-overlay');
+const eventPopupContinue = document.getElementById('event-popup-continue');
+const eventPopupClose = document.getElementById('event-popup-close');
+const eventCountdownDays = document.getElementById('event-countdown-days');
+const eventCountdownHours = document.getElementById('event-countdown-hours');
+const eventCountdownMinutes = document.getElementById('event-countdown-minutes');
+const detailsCountdownDays = document.getElementById('details-countdown-days');
+const detailsCountdownHours = document.getElementById('details-countdown-hours');
+const detailsCountdownMinutes = document.getElementById('details-countdown-minutes');
+const floatingCountdownTime = document.getElementById('floating-countdown-time');
+
+function getEventTimeLeft() {
+    const diff = Math.max(0, eventDate.getTime() - Date.now());
+    const totalMinutes = Math.floor(diff / 60000);
+    const days = Math.floor(totalMinutes / 1440);
+    const hours = Math.floor((totalMinutes % 1440) / 60);
+    const minutes = totalMinutes % 60;
+
+    return { days, hours, minutes };
+}
+
+function updateEventCountdown() {
+    const { days, hours, minutes } = getEventTimeLeft();
+    const paddedHours = String(hours).padStart(2, '0');
+    const paddedMinutes = String(minutes).padStart(2, '0');
+
+    if (eventCountdownDays) eventCountdownDays.textContent = String(days);
+    if (eventCountdownHours) eventCountdownHours.textContent = paddedHours;
+    if (eventCountdownMinutes) eventCountdownMinutes.textContent = paddedMinutes;
+    if (detailsCountdownDays) detailsCountdownDays.textContent = String(days);
+    if (detailsCountdownHours) detailsCountdownHours.textContent = paddedHours;
+    if (detailsCountdownMinutes) detailsCountdownMinutes.textContent = paddedMinutes;
+    if (floatingCountdownTime) floatingCountdownTime.textContent = `${days} : ${paddedHours} : ${paddedMinutes}`;
+}
+
+function closeEventPopup() {
+    if (eventPopup) {
+        eventPopup.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+}
+
+if (eventPopup && eventPopup.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+}
+
+if (eventPopupContinue) {
+    eventPopupContinue.addEventListener('click', closeEventPopup);
+}
+
+if (eventPopupClose) {
+    eventPopupClose.addEventListener('click', closeEventPopup);
+}
+
+if (eventPopupOverlay) {
+    eventPopupOverlay.addEventListener('click', closeEventPopup);
+}
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && eventPopup && eventPopup.classList.contains('active')) {
+        closeEventPopup();
+    }
+});
+
+updateEventCountdown();
+setInterval(updateEventCountdown, 60000);
 
 // ============================================
 // Prefers Reduced Motion Check
