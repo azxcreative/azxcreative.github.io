@@ -46,7 +46,7 @@
             <ul class="nav__menu" id="nav-menu">
                 <li><a href="#rolunk" class="nav__link">Rólunk</a></li>
                 <li><a href="#versenyek" class="nav__link">Versenyek</a></li>
-                <li><a href="#esemeny" class="nav__link">Esemény</a></li>
+                <li><a href="#esemeny" class="nav__link">Győztesek</a></li>
                 <li><a href="#tamogatas" class="nav__link">Támogatás</a></li>
                 <li><a href="#media" class="nav__link">Média</a></li>
                 <li><a href="#gyik" class="nav__link">GYIK</a></li>
@@ -65,13 +65,6 @@
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
             <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
         </svg>
-    </a>
-
-    <!-- Floating Event Countdown -->
-    <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="floating-countdown" id="floating-countdown" aria-label="WORTEX esemény visszaszámláló">
-        <span class="floating-countdown__label">WORTEX 2026</span>
-        <span class="floating-countdown__time" id="floating-countdown-time">-- : -- : --</span>
-        <span class="floating-countdown__meta">nap : óra : perc</span>
     </a>
 
     <!-- Hero Section -->
@@ -205,98 +198,66 @@
         </div>
     </section>
 
-    <!-- Infók Section -->
+    <!-- Győztesek Section -->
     <section class="section section--infok" id="esemeny">
         <div class="container">
-            <h2 class="section__title">Esemény Részletei</h2>
-            <div class="event-details">
-                <div class="event-details__main">
-                    <h3 class="event-details__title">WORTEX 2026</h3>
-                    <p class="event-details__date">Augusztus 29. Szombat</p>
-                    <p class="event-details__location">Budapest, Gamerland</p>
-                    <div class="event-details__actions">
-                        <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">Facebook esemény</a>
+            <h2 class="section__title">Győztesek</h2>
+            <div class="gyoztesek-home">
+                <article class="gyoztesek-home__card">
+                    <h3 class="gyoztesek-home__game">Hearthstone</h3>
+                    <div class="gyoztesek-home__photo">
+                        <img src="img/valnar.jpg" alt="Valnar">
                     </div>
-                </div>
-                <div class="event-details__countdown" aria-label="Visszaszámláló a WORTEX 2026 eseményig">
-                    <div class="event-details__countdown-card">
-                        <span id="details-countdown-days">--</span>
-                        <small>nap</small>
+                    <p class="gyoztesek-home__name">Valnar</p>
+                </article>
+                <article class="gyoztesek-home__card">
+                    <h3 class="gyoztesek-home__game">StarCraft</h3>
+                    <div class="gyoztesek-home__photo">
+                        <img src="img/eagle.jpg" alt="Eagle">
                     </div>
-                    <div class="event-details__countdown-card">
-                        <span id="details-countdown-hours">--</span>
-                        <small>óra</small>
+                    <p class="gyoztesek-home__name">Eagle</p>
+                </article>
+                <article class="gyoztesek-home__card">
+                    <h3 class="gyoztesek-home__game">StarCraft 2</h3>
+                    <div class="gyoztesek-home__photo">
+                        <img src="img/freeman.jpg" alt="Freeman">
                     </div>
-                    <div class="event-details__countdown-card">
-                        <span id="details-countdown-minutes">--</span>
-                        <small>perc</small>
+                    <p class="gyoztesek-home__name">Freeman</p>
+                </article>
+                <article class="gyoztesek-home__card">
+                    <h3 class="gyoztesek-home__game">WRTX Club Cup</h3>
+                    <div class="gyoztesek-home__photo gyoztesek-home__photo--logo">
+                        <img src="versenyek/img/AER-logo.png" alt="Team AER">
                     </div>
-                </div>
-                <ul class="event-details__program">
-                    <li><strong>StarCraft II</strong><small>Top 4</small></li>
-                    <li><strong>StarCraft: Brood War</strong><small>Grand Final</small></li>
-                    <li><strong>Hearthstone</strong><small>Grand Final</small></li>
-                    <li><strong>Közösségi programok</strong><small>Kvízek, kihívások, nyeremények</small></li>
+                    <p class="gyoztesek-home__name">Team AER</p>
+                </article>
+            </div>
+            <div class="prize-home">
+                <p class="prize-home__label">WORTEX 2026 összdíjazása</p>
+                <p class="prize-home__total">425 000 Ft</p>
+                <ul class="prize-home__list">
+                    <li>
+                        <span>StarCraft 2</span>
+                        <strong>300 000 Ft</strong>
+                    </li>
+                    <li>
+                        <span>StarCraft 1</span>
+                        <strong>75 000 Ft</strong>
+                    </li>
+                    <li>
+                        <span>Hearthstone</span>
+                        <strong>50 000 Ft</strong>
+                    </li>
                 </ul>
-            </div>
-            <div class="infok__grid">
-                <div class="info-chip">
-                    <div class="info-chip__icon">🎫</div>
-                    <div class="info-chip__content">
-                        <h3 class="info-chip__title">Belépés</h3>
-                        <p class="info-chip__text">Esemény látogatása díjmentes.</p>
-                    </div>
-                </div>
-                <div class="info-chip">
-                    <div class="info-chip__icon">📺</div>
-                    <div class="info-chip__content">
-                        <h3 class="info-chip__title">Élő közvetítés</h3>
-                        <p class="info-chip__text">Twitch és youtube csatornáinkon.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="programok__cta">
-                <a href="#" class="btn btn--primary btn--large programok__cta-btn">
-                    <span class="programok__cta-text">Részletes Programterv</span>
-                    <span class="programok__cta-hover">hamarosan</span>
-                </a>
             </div>
         </div>
     </section>
 
-    <!-- Támogatás Section -->
+    <!-- Támogatás Section — közösségi támogatás / adományozás ideiglenesen rejtve -->
     <section class="section section--tamogatas" id="tamogatas">
         <div class="container">
-            <h2 class="section__title">Közösségi támogatás</h2>
-            <div class="tamogatas__grid">
-                <div class="tamogatas__video">
-                    <div class="video-thumbnail" id="tamogatas-video-thumbnail" role="button" tabindex="0" aria-label="Videó lejátszása">
-                        <img src="https://img.youtube.com/vi/CMd7XhiAhBc/hqdefault.jpg" alt="WORTEX közösségi támogatás" class="video-thumbnail__img">
-                        <div class="video-thumbnail__play">
-                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="34" cy="34" r="34" fill="rgba(0,0,0,0.6)"/>
-                                <polygon points="27,20 27,48 50,34" fill="#fff"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="tamogatas__content">
-                    <p class="tamogatas__text">
-                        A közösség erejével valósítjuk meg a WORTEX eseményt. Minden támogatás közvetlenül az esemény lebonyolításához járul hozzá.
-                    </p>
-                </div>
-            </div>
-            <div class="tamogatas__modok">
-                <h3 class="tamogatas__modok-title">Adományozás</h3>
-                <p class="tamogatas__modok-text">
-                    Adományoddal közvetlenül a WORTEX megvalósításához járulsz hozzá. Bármilyen összeggel támogathatsz az eseményért.
-                </p>
-                <div class="tamogatas__modok-buttons">
-                    <a href="#" class="btn btn--primary btn--large tamogatas__modok-btn" id="tamogatas-adomany-btn">Adományozás</a>
-                </div>
-            </div>
             <div class="tamogatas__partnerek" id="partnereink">
-                <h3 class="tamogatas__partnerek-title">Partnereink</h3>
+                <h2 class="section__title">Partnereink a 2026-os eseményhez</h2>
                 <div class="partnerek__grid">
                     <a href="https://azxcreative.com" target="_blank" rel="noopener noreferrer" class="partner-logo">
                         <img src="img/partnerek-azx-creative-grafika.webp" alt="AZX Creative">
@@ -332,6 +293,14 @@
         <div class="container">
             <h2 class="section__title">Média</h2>
             <div class="videok__grid">
+                <div class="video-card video-card--featured">
+                    <div class="video-card__thumbnail">
+                        <img src="https://img.youtube.com/vi/oNABMfrUWEQ/maxresdefault.jpg" alt="WORTEX 2026 After Movie">
+                    </div>
+                    <h3 class="video-card__title">WORTEX 2026 After Movie</h3>
+                    <p class="video-card__description">A WORTEX 2026 after movie-ja — a nap hangulata, a döntők és a közösség egy videóban.</p>
+                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/oNABMfrUWEQ?autoplay=1" aria-label="Megtekintés: WORTEX 2026 After Movie">Megtekintés</button>
+                </div>
                 <div class="video-card">
                     <div class="video-card__thumbnail">
                         <img src="https://img.youtube.com/vi/XYCvUr9jhUg/hqdefault.jpg" alt="Panda: A magyar StarCraft csendes underdogja">
@@ -409,29 +378,11 @@
                 </div>
                 <div class="accordion-item">
                     <button class="accordion-item__header" aria-expanded="false">
-                        <span>Hogyan tudom támogatni az eseményt?</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>A <a href="#tamogatas" class="gradient-link">Támogatás</a> szekcióban találod a támogatási linket.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
                         <span>Partner szeretnék lenni.</span>
                         <span class="accordion-item__icon">+</span>
                     </button>
                     <div class="accordion-item__content">
                         <p>Nagyon örülünk! Vedd fel velünk a <a href="#kapcsolat" class="gradient-link">kapcsolatot</a> valamelyik elérhetőségen.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
-                        <span>Mire költitek a támogatásomat?</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>Minden felajánlás 100%-ban az esemény költségeire.</p>
                     </div>
                 </div>
             </div>
@@ -577,50 +528,6 @@
             <button class="video-modal__close" id="rolunk-video-modal-close" aria-label="Bezárás">&times;</button>
             <div class="video-placeholder" style="border-radius: 12px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
                 <iframe id="rolunk-video-modal-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </div>
-
-    <!-- WORTEX Event Popup -->
-    <div class="event-popup active" id="wortex-event-popup" role="dialog" aria-modal="true" aria-labelledby="wortex-event-title">
-        <div class="event-popup__overlay" id="wortex-event-popup-overlay"></div>
-        <div class="event-popup__content">
-            <button class="event-popup__close" id="event-popup-close" type="button" aria-label="Bezárás">&times;</button>
-            <div class="event-popup__video">
-                <video autoplay muted loop playsinline>
-                    <source src="img/web-hero-loop.webm" type="video/webm">
-                </video>
-                <div class="event-popup__video-overlay"></div>
-            </div>
-            <div class="event-popup__body">
-                <p class="event-popup__eyebrow">WORTEX</p>
-                <h2 class="event-popup__title" id="wortex-event-title">Realms Unleashed</h2>
-                <p class="event-popup__date">Augusztus 29. Szombat</p>
-                <p class="event-popup__location">Budapest, Gamerland</p>
-                <div class="event-popup__countdown" aria-label="Visszaszámláló 2026. augusztus 29-ig">
-                    <div>
-                        <span id="event-countdown-days">--</span>
-                        <small>nap</small>
-                    </div>
-                    <div>
-                        <span id="event-countdown-hours">--</span>
-                        <small>óra</small>
-                    </div>
-                    <div>
-                        <span id="event-countdown-minutes">--</span>
-                        <small>perc</small>
-                    </div>
-                </div>
-                <ul class="event-popup__program">
-                    <li><strong>StarCraft II</strong><small>Top 4</small></li>
-                    <li><strong>StarCraft: Brood War</strong><small>Grand Final</small></li>
-                    <li><strong>Hearthstone</strong><small>Grand Final</small></li>
-                    <li><strong>Közösségi programok</strong><small>Kvízek, kihívások, nyeremények</small></li>
-                </ul>
-                <div class="event-popup__actions">
-                    <a href="https://fb.me/e/3IYHTwWGv" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">Facebook esemény</a>
-                    <button type="button" class="btn btn--ghost btn--large" id="event-popup-continue">Tovább a weboldalra</button>
-                </div>
             </div>
         </div>
     </div>
