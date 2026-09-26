@@ -691,6 +691,80 @@
   }
 
   /* ----------------------------------------------------------
+     HERO TITLE GLITCH — rare reversed E
+     ---------------------------------------------------------- */
+  (function initHeroGlitch() {
+    if (reduceMotion) return;
+    const letter = document.querySelector(".hero-title-main .ch-e");
+    const hero = document.getElementById("hero");
+    if (!letter || !hero) return;
+
+    let timer = 0;
+    let inView = true;
+    let cycle = 0;
+
+    const observer = new IntersectionObserver(
+      function (entries) {
+        inView = Boolean(entries[0] && entries[0].isIntersecting);
+      },
+      { threshold: 0.28 }
+    );
+    observer.observe(hero);
+
+    function nextGap() {
+      if (cycle === 0) return 1400 + Math.random() * 1600;
+      if (cycle === 1) return 18000 + Math.random() * 14000;
+      return 6000 + Math.random() * 12000;
+    }
+
+    function holdMs() {
+      return Math.random() > 0.84 ? 220 + Math.random() * 80 : 80 + Math.random() * 140;
+    }
+
+    function variant() {
+      const roll = Math.random();
+      if (roll > 0.88) return "is-glitch-3";
+      if (roll > 0.52) return "is-glitch-rgb";
+      return "is-glitch";
+    }
+
+    function clearGlitch() {
+      letter.classList.remove("is-glitch", "is-glitch-rgb", "is-glitch-3");
+    }
+
+    function schedule(ms) {
+      window.clearTimeout(timer);
+      timer = window.setTimeout(runGlitch, ms);
+    }
+
+    function runGlitch() {
+      if (document.hidden || !inView) {
+        schedule(nextGap());
+        return;
+      }
+      const kind = variant();
+      letter.classList.add("is-glitch");
+      if (kind !== "is-glitch") letter.classList.add(kind);
+      window.setTimeout(function () {
+        clearGlitch();
+        cycle += 1;
+        schedule(nextGap());
+      }, holdMs());
+    }
+
+    document.addEventListener("visibilitychange", function () {
+      if (document.hidden) {
+        window.clearTimeout(timer);
+        clearGlitch();
+        return;
+      }
+      schedule(nextGap());
+    });
+
+    schedule(nextGap());
+  })();
+
+  /* ----------------------------------------------------------
      GSAP ANIMATIONS
      ---------------------------------------------------------- */
   if (typeof gsap === "undefined") {

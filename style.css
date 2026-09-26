@@ -819,6 +819,28 @@ html.is-i18n-switching .about-model {
   display: inline-block;
 }
 
+.ch-glyph {
+  display: inline-block;
+  transform-origin: 52% 48%;
+}
+
+.ch-e.is-glitch .ch-glyph {
+  transform: scaleX(-1);
+}
+
+.ch-e.is-glitch-rgb .ch-glyph {
+  transform: scaleX(-1) translate3d(0.03em, 0, 0);
+  text-shadow:
+    -0.03em 0 rgba(41, 200, 255, 0.55),
+    0.035em 0 rgba(255, 64, 92, 0.32),
+    var(--glow);
+}
+
+.ch-e.is-glitch-3 .ch-glyph {
+  transform: scaleX(-1) skewY(-11deg) scaleY(0.94);
+  opacity: 0.9;
+}
+
 .hero-sub {
   margin-top: 18px;
   font-family: var(--font-condensed);
@@ -2895,6 +2917,14 @@ html.is-hu-compact-nav .site-header:has(.nav.is-open) {
 
   .hero-mark {
     filter: blur(16px);
+  }
+
+  .ch-e.is-glitch .ch-glyph,
+  .ch-e.is-glitch-rgb .ch-glyph,
+  .ch-e.is-glitch-3 .ch-glyph {
+    transform: none !important;
+    opacity: 1 !important;
+    text-shadow: inherit !important;
   }
 
   .hero-mark::after {
