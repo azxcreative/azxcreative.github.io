@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <radialGradient id="void" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#06122b"/>
+      <stop offset="70%" stop-color="#000"/>
+    </radialGradient>
+    <radialGradient id="metal" cx="34%" cy="28%" r="78%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="12%" stop-color="#b9dcff"/>
+      <stop offset="28%" stop-color="#29c8ff"/>
+      <stop offset="46%" stop-color="#1147d7"/>
+      <stop offset="68%" stop-color="#030814"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+  <rect width="900" height="900" fill="url(#void)"/>
+  <circle cx="460" cy="430" r="240" fill="#1367ff" opacity=".22" filter="url(#bloom)"/>
+  <circle cx="430" cy="400" r="168" fill="url(#metal)"/>
+  <ellipse cx="370" cy="330" rx="70" ry="36" fill="#fff" opacity=".28" filter="url(#bloom)"/>
+  <circle cx="430" cy="400" r="168" stroke="#29c8ff" stroke-opacity=".25"/>
+  <path d="M262 400c80-110 256-110 336 0" stroke="#fff" stroke-opacity=".12" fill="none"/>
+  <path d="M270 430h320" stroke="#1367ff" stroke-opacity=".2"/>
+</svg>

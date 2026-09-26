@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 900" fill="none">
+  <defs>
+    <radialGradient id="navy" cx="60%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#06122b"/>
+      <stop offset="100%" stop-color="#000"/>
+    </radialGradient>
+    <linearGradient id="glass" x1="0.2" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="18%" stop-color="#29c8ff"/>
+      <stop offset="40%" stop-color="#1367ff"/>
+      <stop offset="62%" stop-color="#071226"/>
+      <stop offset="100%" stop-color="#9fd0ff"/>
+    </linearGradient>
+    <filter id="b" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+  </defs>
+  <rect width="900" height="900" fill="url(#navy)"/>
+  <circle cx="520" cy="360" r="180" fill="#1367ff" opacity=".22" filter="url(#b)"/>
+  <path d="M250 620 L430 160 L690 430 L520 700 Z" fill="url(#glass)" opacity=".92"/>
+  <path d="M430 160 L520 430 L250 620" fill="#fff" opacity=".08"/>
+  <path d="M430 160 L690 430 L520 430 Z" fill="#29c8ff" opacity=".12"/>
+  <path d="M180 700 H760" stroke="#1147d7" stroke-opacity=".35"/>
+</svg>
