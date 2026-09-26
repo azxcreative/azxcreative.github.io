@@ -1,6 +1,5 @@
-# WORTEX — https://wortexgg.hu
 User-agent: *
 Allow: /
+Disallow: /tournaments/warcraft.html
 
-# Sitemap (extensionless URLs)
 Sitemap: https://wortexgg.hu/sitemap.xml

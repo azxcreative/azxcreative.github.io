@@ -1,668 +1,530 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WORTEX — A hazai Blizzard-közösség találkozója</title>
-    <meta name="description" content="WORTEX — Magyarország legnagyobb Blizzard-tematikájú rendezvénye. Ingyenes esemény Budapesten, ahol a Blizzard-játékok versenyei és közösségi programok találkoznak.">
-    <meta name="keywords" content="WORTEX, Blizzard, esport, StarCraft, Warcraft, Hearthstone, Budapest, esemény, verseny, gaming, közösség">
-    <meta name="author" content="WORTEX">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#061a2d">
-    <link rel="canonical" href="https://wortexgg.hu/">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="WORTEX — A hazai Blizzard-közösség találkozója">
-    <meta property="og:description" content="WORTEX — Magyarország legnagyobb Blizzard-tematikájú rendezvénye. Ingyenes esemény Budapesten, ahol a Blizzard-játékok versenyei és közösségi programok találkoznak.">
-    <meta property="og:image" content="https://wortexgg.hu/img/wortexgghu-magyarorszag-legnagyobb-blizzard-tematikaju-rendezvenye.png">
-    <meta property="og:url" content="https://wortexgg.hu/">
-    <meta property="og:site_name" content="WORTEX">
-    <meta property="og:locale" content="hu_HU">
-    
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="WORTEX — A hazai Blizzard-közösség találkozója">
-    <meta name="twitter:description" content="WORTEX — Magyarország legnagyobb Blizzard-tematikájú rendezvénye. Ingyenes esemény Budapesten, ahol a Blizzard-játékok versenyei és közösségi programok találkoznak.">
-    <meta name="twitter:image" content="https://wortexgg.hu/img/wortexgghu-magyarorszag-legnagyobb-blizzard-tematikaju-rendezvenye.png">
-    
-    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon-48x48.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon-48x48.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.1.0/dist/cookieconsent.css">
+  <meta charset="UTF-8">
+  <script>
+    (function () {
+      try {
+        var lang = localStorage.getItem("wortex-language") === "hu" ? "hu" : "en";
+        document.documentElement.lang = lang;
+        document.documentElement.setAttribute("data-lang", lang);
+      } catch (e) {
+        document.documentElement.setAttribute("data-lang", "en");
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WORTEX is a community-driven esports platform bringing together tournaments, offline events, broadcasts, player stories and competitive gaming communities.">
+  <meta name="theme-color" content="#000000">
+  <title>WORTEX | Home of Community Esports</title>
+  <link rel="canonical" href="https://wortexgg.hu/">
+  <link rel="icon" type="image/svg+xml" href="assets/img/wortex-favicon.svg">
+  <link rel="preload" href="assets/logos/wrtx-svg.svg" as="image">
+  <meta property="og:site_name" content="WORTEX">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wortexgg.hu/">
+  <meta property="og:title" content="WORTEX | Home of Community Esports">
+  <meta property="og:description" content="WORTEX is a community-driven esports platform bringing together tournaments, offline events, broadcasts, player stories and competitive gaming communities.">
+  <meta property="og:image" content="https://wortexgg.hu/assets/img/wortex-social.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="WORTEX | Home of Community Esports">
+  <meta name="twitter:description" content="WORTEX is a community-driven esports platform bringing together tournaments, offline events, broadcasts, player stories and competitive gaming communities.">
+  <meta name="twitter:image" content="https://wortexgg.hu/assets/img/wortex-social.jpg">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@graph":[
+    {"@type":"Organization","@id":"https://wortexgg.hu/#organization","name":"WORTEX","url":"https://wortexgg.hu/","logo":"https://wortexgg.hu/assets/img/wortex-favicon.svg","description":"Community-driven esports tournament and gaming event platform.","areaServed":"Hungary","sameAs":["https://facebook.com/wortexgghu","https://youtube.com/@wortexgghu","https://instagram.com/wortexgghu","https://twitch.tv/wortexgghu","https://wortexgg.hu/discord"],"contactPoint":[{"@type":"ContactPoint","email":"contact@wortexgg.hu","contactType":"customer support","name":"General inquiries"},{"@type":"ContactPoint","email":"podcast@wortexgg.hu","contactType":"public relations","name":"Podcast"},{"@type":"ContactPoint","email":"partners@wortexgg.hu","contactType":"sales","name":"Partnerships"}]},
+    {"@type":"WebSite","@id":"https://wortexgg.hu/#website","name":"WORTEX","url":"https://wortexgg.hu/","inLanguage":"en","publisher":{"@id":"https://wortexgg.hu/#organization"}}
+  ]}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wdth,wght@62..125,400;500;600;700&family=Bebas+Neue&family=Inter+Tight:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="articles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <div class="nav__logo">
-                <a href="#hero">WORTEX</a>
-            </div>
-            <ul class="nav__menu" id="nav-menu">
-                <li><a href="#rolunk" class="nav__link">Rólunk</a></li>
-                <li><a href="#versenyek" class="nav__link">Versenyek</a></li>
-                <li><a href="#esemeny" class="nav__link">Győztesek</a></li>
-                <li><a href="#tamogatas" class="nav__link">Támogatás</a></li>
-                <li><a href="#media" class="nav__link">Média</a></li>
-                <li><a href="#gyik" class="nav__link">GYIK</a></li>
-                <li><a href="#kapcsolat" class="nav__link">Kapcsolat</a></li>
-            </ul>
-            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- GRAIN -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- CURSOR -->
+  <div class="cursor" aria-hidden="true">
+    <span class="cursor-dot"></span>
+    <span class="cursor-label"></span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary" data-i18n-attr="aria-label:nav.primary">
+      <a class="nav-brand" href="#hero">WORTEX</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu" data-i18n-attr="aria-label:nav.openMenu">
+        <span class="nav-toggle-icon" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#tournaments" data-i18n="nav.tournaments">Tournaments</a></li>
+        <li><a href="#hall" data-i18n="nav.hall">Hall of Fame</a></li>
+        <li><a href="#vods" data-i18n="nav.vods">VODs</a></li>
+        <li><a href="articles.html" data-i18n="nav.articles">Articles</a></li>
+        <li><a href="#merch" data-i18n="nav.merch">Merch</a></li>
+        <li><a href="#partners" data-i18n="nav.partners">Partners</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li class="nav-lang">
+          <p class="nav-lang-label" data-i18n="lang.label">Language</p>
+          <div class="lang-options">
+            <button type="button" class="lang-option" data-set-lang="en" data-i18n-attr="aria-label:lang.toEn">
+              <span class="lang-option-flag" data-flag="en" aria-hidden="true"></span>
+              <span data-i18n="lang.english">English</span>
             </button>
-        </nav>
-    </header>
+            <button type="button" class="lang-option" data-set-lang="hu" data-i18n-attr="aria-label:lang.toHu">
+              <span class="lang-option-flag" data-flag="hu" aria-hidden="true"></span>
+              <span data-i18n="lang.hungarian">Magyar</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+      <div class="lang-switch lang-switch--bar" data-lang-switch>
+        <button type="button" class="lang-switch-btn" aria-expanded="false" aria-haspopup="listbox" data-i18n-attr="aria-label:lang.open">
+          <span class="lang-flag" data-lang-flag aria-hidden="true"></span>
+          <span class="lang-code" data-lang-code>EN</span>
+        </button>
+        <ul class="lang-menu" role="listbox" hidden>
+          <li>
+            <button type="button" role="option" class="lang-option" data-set-lang="en" data-i18n-attr="aria-label:lang.toEn">
+              <span class="lang-option-flag" data-flag="en" aria-hidden="true"></span>
+              <span data-i18n="lang.english">English</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" role="option" class="lang-option" data-set-lang="hu" data-i18n-attr="aria-label:lang.toHu">
+              <span class="lang-option-flag" data-flag="hu" aria-hidden="true"></span>
+              <span data-i18n="lang.hungarian">Magyar</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Floating Discord CTA -->
-    <a href="https://wortexgg.hu/discord" target="_blank" rel="noopener noreferrer" class="floating-cta" aria-label="Discord">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-atmosphere" aria-hidden="true">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <div class="orb orb-c"></div>
+        <div class="orb orb-core"></div>
+        <div class="refract"></div>
+        <div class="hero-mark">
+          <img src="assets/logos/wrtx-svg.svg" alt="" fetchpriority="high" decoding="async">
+        </div>
+      </div>
+
+      <div class="hero-meta hero-meta-left">
+        <span>WORTEX</span>
+        <span data-i18n="hero.est">EST. 2025</span>
+        <span>47.4979° N / 19.0402° E</span>
+      </div>
+
+      <div class="hero-stage">
+        <p class="eyebrow" data-i18n="hero.origin">01 — ORIGIN</p>
+        <h1 class="hero-title" id="hero-title" aria-label="WORTEX">
+          <span class="hero-title-blur" aria-hidden="true">WORTEX</span>
+          <span class="hero-title-main">
+            <span class="ch" data-speed="1.15">W</span>
+            <span class="ch" data-speed="1.05">O</span>
+            <span class="ch" data-speed="0.92">R</span>
+            <span class="ch" data-speed="1.12">T</span>
+            <span class="ch" data-speed="0.88">E</span>
+            <span class="ch" data-speed="1.08">X</span>
+          </span>
+        </h1>
+        <p class="hero-sub">Realms Unleashed</p>
+      </div>
+
+      <div class="hero-meta hero-meta-right">
+        <span data-i18n="hero.hungary">HUNGARY</span>
+        <span>REALMS UNLEASHED</span>
+        <span>SEQ. 00 / 09</span>
+      </div>
+
+      <div class="hero-micro" aria-hidden="true">
+        <span class="micro-cross">+</span>
+        <span class="micro-coord">WTX-25</span>
+        <svg class="micro-sphere" viewBox="0 0 40 40">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor"/>
+          <ellipse cx="20" cy="20" rx="18" ry="7" fill="none" stroke="currentColor"/>
+          <ellipse cx="20" cy="20" rx="7" ry="18" fill="none" stroke="currentColor"/>
         </svg>
-    </a>
+      </div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero__video-wrapper">
-            <video class="hero__video" autoplay muted loop playsinline>
-                <source src="img/web-hero-loop.webm" type="video/webm">
-            </video>
-            <div class="hero__overlay"></div>
-        </div>
-        <div class="hero__content container">
-            <div class="hero__logo">
-                <img src="img/wortex-logo.webp" alt="WORTEX">
-            </div>
-            <p class="hero__tagline">Hazai blizzard-közösség ünnepe Budapesten.</p>
-            <div class="hero__cta">
-                <a href="#rolunk" class="btn btn--ghost btn--large">Tudj meg többet</a>
-            </div>
-            <a href="#rolunk" class="hero__scroll-arrow" aria-label="Scroll to next section">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </a>
-        </div>
-        <div class="hero__glow hero__glow--1"></div>
-        <div class="hero__glow hero__glow--2"></div>
+      <a class="scroll-hint" href="#about">
+        <span data-i18n="hero.scroll">SCROLL</span>
+        <span class="scroll-line" aria-hidden="true"></span>
+      </a>
     </section>
 
-    <!-- Rólunk Section -->
-    <section class="section section--rolunk" id="rolunk">
-        <div class="container">
-            <h2 class="section__title">Mi a WORTEX?</h2>
-            <div class="rolunk__grid">
-                <div class="rolunk__video">
-                    <div class="video-thumbnail" id="rolunk-video-thumbnail" role="button" tabindex="0" aria-label="Videó lejátszása">
-                        <img src="https://img.youtube.com/vi/CMd7XhiAhBc/hqdefault.jpg" alt="Mi a WORTEX?" class="video-thumbnail__img">
-                        <div class="video-thumbnail__play">
-                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="34" cy="34" r="34" fill="rgba(0,0,0,0.6)"/>
-                                <polygon points="27,20 27,48 50,34" fill="#fff"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="rolunk__content">
-                    <p class="rolunk__text">
-                        A WORTEX egy közösségi esemény, ami a Blizzard-játékok köré épül: versenyzőknek és rajongóknak egyaránt. Itt nem csak a döntők és a meccsek a lényeg — hanem a találkozás, a hangulat és a közös emlékek, hogy egy napra mindenki ugyanazt ünnepelje. Legyél játékos vagy csak néző: a WORTEX egy nagy, közös élmény, ahol mindenki megtalálja azt, amiért jött.
-                    </p>
-                    <div class="rolunk__cta">
-                        <a href="#tamogatas" class="btn btn--secondary">Légy részese</a>
-                    </div>
-                </div>
-            </div>
+    <!-- ABOUT -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-fx" aria-hidden="true">
+        <div class="section-light about-light"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
+          <header class="about-head">
+            <p class="eyebrow" data-i18n="about.kicker">02 — IDENTITY</p>
+            <h2 class="display" id="about-title">
+              <span class="display-line" data-i18n="about.heading1">ABOUT</span>
+              <span class="display-line" data-i18n="about.heading2">WORTEX</span>
+            </h2>
+          </header>
+
+          <p class="about-lead" data-i18n="about.lead">WORTEX is built around competition, but powered by community.</p>
+
+          <div class="about-body">
+            <p data-i18n-html="about.body1">WORTEX is a community-driven esports platform created to bring players, fans and stories together through <a href="#tournaments">tournaments</a>, broadcasts, content and offline events.</p>
+            <p data-i18n="about.body2">It started with a simple idea: create an event worth remembering, which is more than just matches.</p>
+            <p data-i18n="about.body3">At its core, WORTEX is made by the community, for the community. The games and results matter, but so do the people, personalities, rivalries and friendships that keep competitive scenes alive.</p>
+            <p data-i18n="about.body4">With roots in StarCraft and Blizzard gaming communities, WORTEX aims to create a home for players and fans who still care deeply about their games.</p>
+            <p data-i18n="about.body5">The competition brings us together. The community is what makes WORTEX.</p>
+            <p data-i18n="about.body6">Made by the community. For the community.</p>
+          </div>
+
+          <ul class="about-meta">
+            <li>
+              <p class="eyebrow" data-i18n="about.metaCommunity">Community-driven</p>
+              <p data-i18n="about.metaCommunityValue">Built by players and fans</p>
+            </li>
+            <li>
+              <p class="eyebrow" data-i18n="about.metaFounded">Founded</p>
+              <p>2025</p>
+            </li>
+            <li>
+              <p class="eyebrow" data-i18n="about.metaFocus">Focus</p>
+              <p data-i18n="about.metaFocusValue">Tournaments / Content / Events</p>
+            </li>
+            <li>
+              <p class="eyebrow" data-i18n="about.metaMission">Mission</p>
+              <p data-i18n="about.metaMissionValue">For the community</p>
+            </li>
+          </ul>
         </div>
+
+        <div class="about-visual">
+          <div class="about-logo-glow" aria-hidden="true"></div>
+          <div
+            class="about-model"
+            id="about-model"
+            data-cursor="DRAG"
+            role="img"
+            aria-label="Interactive 3D WORTEX logo"
+            data-i18n-attr="aria-label:about.model"
+          >
+            <p class="about-model-status eyebrow" data-about-status data-i18n="about.loading" hidden>Loading object</p>
+            <img class="about-model-fallback" src="assets/logos/wrtx-svg.svg" alt="">
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Versenyek Section -->
-    <section class="section section--versenyek" id="versenyek">
-        <div class="container">
-            <h2 class="section__title">Versenyek</h2>
-            <div class="versenyek__grid">
-                <div class="tournament-card">
-                    <div class="tournament-card__image">
-                        <img src="img/starcraft2-tournament-budapest-hungary.webp" alt="StarCraft II">
-                    </div>
-                    <div class="tournament-card__content">
-                        <h3 class="tournament-card__title">StarCraft II</h3>
-                        <p class="tournament-card__description">
-                            Az egyik legikonikusabb Blizzard RTS, ahol a stratégia és a micro egyszerre számít.
-                        </p>
-                        <div class="tournament-card__actions">
-                            <a href="versenyek/starcraft2.html" class="btn btn--primary">Részletek</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="tournament-card">
-                    <div class="tournament-card__image">
-                        <img src="img/starcraft-brood-war-tournament-budapest-hungary.webp" alt="StarCraft: Remastered">
-                    </div>
-                    <div class="tournament-card__content">
-                        <h3 class="tournament-card__title">StarCraft: Remastered</h3>
-                        <p class="tournament-card__description">
-                            A klasszikus, ami mindent elindított — tiszta mechanika és legendás párharcok.
-                        </p>
-                        <div class="tournament-card__actions">
-                            <a href="versenyek/starcraft.html" class="btn btn--primary">Részletek</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- WarCraft III — ideiglenesen kikommentálva
-                <div class="tournament-card">
-                    <div class="tournament-card__image">
-                        <img src="img/warcraft3-tournament-budapest-hungary.webp" alt="Warcraft III">
-                    </div>
-                    <div class="tournament-card__content">
-                        <h3 class="tournament-card__title">WarCraft III</h3>
-                        <p class="tournament-card__description">
-                            Hősök, creep-route-ok és ikonikus csaták — a Warcraft III örök esport alap.
-                        </p>
-                        <div class="tournament-card__actions">
-                            <a href="versenyek/warcraft3.html" class="btn btn--primary">Részletek</a>
-                        </div>
-                    </div>
-                </div>
-                -->
-                <div class="tournament-card">
-                    <div class="tournament-card__image">
-                        <img src="img/hearthstone-open-tournament-budapest-hungary.webp" alt="Hearthstone">
-                    </div>
-                    <div class="tournament-card__content">
-                        <h3 class="tournament-card__title">Hearthstone</h3>
-                        <p class="tournament-card__description">
-                            Gyors, látványos Blizzard kártyajáték, ahol a döntések és a pakliépítés egyszerre számít.
-                        </p>
-                        <div class="tournament-card__actions">
-                            <a href="versenyek/hearthstone.html" class="btn btn--primary">Részletek</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="versenyek__clubcup-card">
-                <div class="versenyek__clubcup-logo">
-                    <img src="versenyek/img/wortex-circuit-logo.png" alt="Wortex Circuit">
-                </div>
-                <h3 class="versenyek__clubcup-title">Wortex Club Cup</h3>
-                <p class="versenyek__clubcup-description">
-                    Csapatok kupája, a játékosaid helyezései pontokat érnek, a legtöbb pontot gyűjtött esport csapat nyeri a trófeát.
-                </p>
-                <a href="versenyek/clubcup.html" class="btn btn--primary">Részletek</a>
-            </div>
-        </div>
+    <!-- TOURNAMENTS -->
+    <section class="tournaments" id="tournaments" aria-labelledby="tournaments-title">
+      <div class="section-light tournaments-light" aria-hidden="true"></div>
+
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="tournaments.kicker">03 — CIRCUIT</p>
+        <h2 class="display" id="tournaments-title" data-i18n="tournaments.title">TOURNAMENTS</h2>
+      </header>
+
+      <div class="tournament-grid">
+        <a class="t-block t-sc panel" href="tournaments/starcraft2.html" data-cursor="VIEW">
+          <div class="t-media">
+            <img src="assets/img/starcraft-ii.webp" alt="StarCraft II, the flagship WORTEX esports tournament title" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/cgi/prism.svg'" data-i18n-attr="alt:tournaments.sc2Alt">
+          </div>
+          <div class="t-copy">
+            <p class="t-meta" data-i18n="tournaments.premier">01 · RTS · PREMIER</p>
+            <h3>STARCRAFT&nbsp;II</h3>
+            <span class="t-cta"><span data-i18n="tournaments.view">View</span> <span class="arrow" aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="t-block t-sc2 panel" href="tournaments/more.html" data-cursor="VIEW">
+          <div class="t-media">
+            <img src="assets/img/more.jpg" alt="Community gaming titles WORTEX is open to featuring beyond its core tournaments" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/cgi/core.svg'" data-i18n-attr="alt:tournaments.moreAlt">
+          </div>
+          <div class="t-copy">
+            <p class="t-meta" data-i18n="tournaments.moreMeta">04 · MORE</p>
+            <h3 data-i18n="tournaments.more">MORE</h3>
+            <span class="t-cta"><span data-i18n="tournaments.view">View</span> <span class="arrow" aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="t-block t-wc panel" href="tournaments/starcraft.html" data-cursor="VIEW">
+          <div class="t-media">
+            <img src="assets/img/starcraft-remastered-brood-war.webp" alt="StarCraft: Brood War / Remastered tournament at WORTEX" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/cgi/shard.svg'" data-i18n-attr="alt:tournaments.scAlt">
+          </div>
+          <div class="t-copy">
+            <p class="t-meta" data-i18n="tournaments.classic">02 · RTS · CLASSIC</p>
+            <h3>STARCRAFT</h3>
+            <span class="t-cta"><span data-i18n="tournaments.view">View</span> <span class="arrow" aria-hidden="true">→</span></span>
+          </div>
+        </a>
+
+        <a class="t-block t-hs panel" href="tournaments/hearthstone.html" data-cursor="VIEW">
+          <div class="t-media">
+            <img src="assets/img/hearthstone.webp" alt="Hearthstone tournament competition at WORTEX" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='assets/cgi/torus.svg'" data-i18n-attr="alt:tournaments.hsAlt">
+          </div>
+          <div class="t-copy">
+            <p class="t-meta" data-i18n="tournaments.cards">03 · CARDS · DIGITAL</p>
+            <h3>HEARTHSTONE</h3>
+            <span class="t-cta"><span data-i18n="tournaments.view">View</span> <span class="arrow" aria-hidden="true">→</span></span>
+          </div>
+        </a>
+      </div>
     </section>
 
-    <!-- Győztesek Section -->
-    <section class="section section--infok" id="esemeny">
-        <div class="container">
-            <h2 class="section__title">Győztesek</h2>
-            <div class="gyoztesek-home">
-                <article class="gyoztesek-home__card">
-                    <h3 class="gyoztesek-home__game">Hearthstone</h3>
-                    <div class="gyoztesek-home__photo">
-                        <img src="img/valnar.jpg" alt="Valnar">
-                    </div>
-                    <p class="gyoztesek-home__name">Valnar</p>
-                </article>
-                <article class="gyoztesek-home__card">
-                    <h3 class="gyoztesek-home__game">StarCraft</h3>
-                    <div class="gyoztesek-home__photo">
-                        <img src="img/eagle.jpg" alt="Eagle">
-                    </div>
-                    <p class="gyoztesek-home__name">Eagle</p>
-                </article>
-                <article class="gyoztesek-home__card">
-                    <h3 class="gyoztesek-home__game">StarCraft 2</h3>
-                    <div class="gyoztesek-home__photo">
-                        <img src="img/freeman.jpg" alt="Freeman">
-                    </div>
-                    <p class="gyoztesek-home__name">Freeman</p>
-                </article>
-                <article class="gyoztesek-home__card">
-                    <h3 class="gyoztesek-home__game">WRTX Club Cup</h3>
-                    <div class="gyoztesek-home__photo gyoztesek-home__photo--logo">
-                        <img src="versenyek/img/AER-logo.png" alt="Team AER">
-                    </div>
-                    <p class="gyoztesek-home__name">Team AER</p>
-                </article>
-            </div>
-            <div class="prize-home">
-                <p class="prize-home__label">WORTEX 2026 összdíjazása</p>
-                <p class="prize-home__total">425 000 Ft</p>
-                <ul class="prize-home__list">
-                    <li>
-                        <span>StarCraft 2</span>
-                        <strong>300 000 Ft</strong>
-                    </li>
-                    <li>
-                        <span>StarCraft 1</span>
-                        <strong>75 000 Ft</strong>
-                    </li>
-                    <li>
-                        <span>Hearthstone</span>
-                        <strong>50 000 Ft</strong>
-                    </li>
-                </ul>
-            </div>
+    <!-- HALL OF FAME -->
+    <section class="hof" id="hall" aria-labelledby="hof-title">
+      <div class="section-light hof-light" aria-hidden="true"></div>
+
+      <header class="hof-head">
+        <p class="eyebrow" data-i18n="hof.kicker">04 — LEGENDS</p>
+        <h2 class="display hof-title" id="hof-title">
+          <span class="display-line" data-i18n="hof.line1">HALL</span>
+          <span class="display-line display-line--offset" data-i18n="hof.line2">OF FAME</span>
+        </h2>
+        <p class="vert-label" aria-hidden="true" data-i18n="hof.archive">ARCHIVE</p>
+      </header>
+
+      <div class="hof-timeline">
+        <div class="hof-spine" aria-hidden="true">
+          <span class="hof-spine-base"></span>
+          <span class="hof-spine-draw"></span>
         </div>
+        <ol class="hof-list" id="hof-list"></ol>
+      </div>
     </section>
 
-    <!-- Támogatás Section — közösségi támogatás / adományozás ideiglenesen rejtve -->
-    <section class="section section--tamogatas" id="tamogatas">
-        <div class="container">
-            <div class="tamogatas__partnerek" id="partnereink">
-                <h2 class="section__title">Partnereink a 2026-os eseményhez</h2>
-                <div class="partnerek__grid">
-                    <a href="https://azxcreative.com" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-azx-creative-grafika.webp" alt="AZX Creative">
-                    </a>
-                    <a href="https://gamerland.hu" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-gamerland-budapest.webp" alt="Gamerland Budapest">
-                    </a>
-                    <a href="https://hungarianproseries.com" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-hungarian-pro-series.webp" alt="Hungarian Pro Series">
-                    </a>
-                    <a href="https://pizzahut.hu" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-pizza-hut.webp" alt="Pizza Hut">
-                    </a>
-                    <button type="button" class="partner-logo" id="hammertime-partner-btn" aria-label="HammerTime Cafe – partnerünk">
-                        <img src="img/partnerek-hammertimecafe.webp" alt="HammerTime Cafe">
-                    </button>
-                    <a href="https://dombaishop.com/" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-dombai.webp" alt="Dombai Sports Shop">
-                    </a>
-                    <a href="https://youtooz.com/" target="_blank" rel="noopener noreferrer" class="partner-logo">
-                        <img src="img/partnerek-youtooz.webp" alt="Youtooz">
-                    </a>
-                </div>
-                <div class="partnerek__cta">
-                    <a href="#kapcsolat" class="btn btn--primary btn--large">Legyél a partnerünk</a>
-                </div>
-            </div>
+    <!-- NEXT CHAPTER SECTION TEMPORARILY HIDDEN
+    <section class="chapter" id="chapter" aria-labelledby="chapter-title">
+      <div class="section-light chapter-light" aria-hidden="true"></div>
+
+      <div class="chapter-poster">
+        <p class="eyebrow">03 — AHEAD</p>
+        <h2 class="chapter-display" id="chapter-title">
+          <span class="w w-next">NEXT</span>
+          <span class="w w-chapter">CHAPTER</span>
+          <span class="w w-soon">COMING SOON</span>
+        </h2>
+        <p class="vert-label vert-label--right" aria-hidden="true">SEQ 03</p>
+      </div>
+    </section>
+    -->
+
+    <!-- VODS -->
+    <section class="vods" id="vods" aria-labelledby="vods-title">
+      <div class="section-light vods-light" aria-hidden="true"></div>
+
+      <header class="section-head vods-head">
+        <div>
+          <p class="eyebrow" data-i18n="vods.kicker">05 — ARCHIVE FILM</p>
+          <h2 class="display" id="vods-title">
+            <span class="display-line" data-i18n="vods.line1">WATCH</span>
+            <span class="display-line display-line--muted" data-i18n="vods.line2">AGAIN</span>
+          </h2>
         </div>
+        <div class="vods-controls">
+          <button type="button" class="rail-btn" id="vod-prev" aria-label="Previous videos" data-i18n="vods.prev" data-i18n-attr="aria-label:vods.prevAria">Prev</button>
+          <button type="button" class="rail-btn" id="vod-next" aria-label="Next videos" data-i18n="vods.next" data-i18n-attr="aria-label:vods.nextAria">Next</button>
+        </div>
+      </header>
+
+      <div class="vods-rail" id="vods-rail" tabindex="0" aria-label="Video carousel" data-i18n-attr="aria-label:vods.carousel"></div>
     </section>
 
-    <!-- Média Section -->
-    <section class="section section--videok" id="media">
-        <div class="container">
-            <h2 class="section__title">Média</h2>
-            <div class="videok__grid">
-                <div class="video-card video-card--featured">
-                    <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/oNABMfrUWEQ/maxresdefault.jpg" alt="WORTEX 2026 After Movie">
-                    </div>
-                    <h3 class="video-card__title">WORTEX 2026 After Movie</h3>
-                    <p class="video-card__description">A WORTEX 2026 after movie-ja — a nap hangulata, a döntők és a közösség egy videóban.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/oNABMfrUWEQ?autoplay=1" aria-label="Megtekintés: WORTEX 2026 After Movie">Megtekintés</button>
-                </div>
-                <div class="video-card">
-                    <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/XYCvUr9jhUg/hqdefault.jpg" alt="Panda: A magyar StarCraft csendes underdogja">
-                    </div>
-                    <h3 class="video-card__title">Panda | Signature Series #1</h3>
-                    <p class="video-card__description">Panda története a magyar StarCraft közösségről, versenyekről, fejlődésről és a WORTEX-re készülésről.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/XYCvUr9jhUg?autoplay=1" aria-label="Megtekintés: Panda: A magyar StarCraft csendes underdogja">Megtekintés</button>
-                </div>
-                <div class="video-card">
-                    <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/5uovrb9a03c/hqdefault.jpg" alt="StarCraft itthon">
-                    </div>
-                    <h3 class="video-card__title">StarCraft itthon</h3>
-                    <p class="video-card__description">Beszélgetés a hazai StarCraft közösségről, versenyekről, játékosokról és a magyar színtér jövőjéről.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/5uovrb9a03c?autoplay=1" aria-label="Megtekintés: StarCraft itthon">Megtekintés</button>
-                </div>
-                <div class="video-card">
-                    <div class="video-card__thumbnail">
-                        <img src="https://img.youtube.com/vi/aCJ5aazvFdE/hqdefault.jpg" alt="StarCraft legend to business">
-                    </div>
-                    <h3 class="video-card__title">StarCraft legend to business</h3>
-                    <p class="video-card__description">Cameleon útja a StarCraft hőskorától a WCG-n át a tech és e-commerce vállalkozások világáig.</p>
-                    <button class="btn btn--secondary media-video-btn" data-video="https://www.youtube.com/embed/aCJ5aazvFdE?autoplay=1" aria-label="Megtekintés: StarCraft legend to business">Megtekintés</button>
-                </div>
-            </div>
-            <div class="videok__cta">
-                <a href="https://www.youtube.com/@wortexgghu" target="_blank" rel="noopener noreferrer" class="btn btn--primary">További videók YouTube-on</a>
-            </div>
-            <div class="media__podcast">
-                <div class="media__podcast-card">
-                    <div class="media__podcast-logo">
-                        <img src="img/wrtx-podcast-wortex-beszelgetos-musoranak-logoja.webp" alt="WRTX Podcast">
-                    </div>
-                    <div class="media__podcast-content">
-                        <h3 class="media__podcast-title">WRTX Podcast</h3>
-                        <p class="media__podcast-description">A WORTEX által inspirált beszélgetős műsor: őszinte beszélgetések a gaming és esport világ kulisszái mögül, érdekes vendégekkel a hazai és külföldi színtérről.</p>
-                        <a href="podcast/index.html" class="btn btn--primary">TUDJ MEG TÖBBET</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <!-- ARTICLES -->
+    <section class="articles" id="articles" aria-labelledby="articles-title">
+      <div class="section-light merch-light" aria-hidden="true"></div>
+
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="articles.kicker">06 — LATEST / STORIES</p>
+        <h2 class="display" id="articles-title" data-i18n="articles.title">ARTICLES</h2>
+      </header>
+
+      <ul class="article-grid" id="articles-home"></ul>
+      <a class="t-cta articles-more" href="articles.html" data-cursor="READ">
+        <span data-i18n="articles.all">View all articles</span> <span class="arrow" aria-hidden="true">→</span>
+      </a>
     </section>
 
-    <!-- GYIK Section -->
-    <section class="section section--gyik" id="gyik">
-        <div class="container">
-            <h2 class="section__title">Gyakran Ismételt Kérdések</h2>
-            <div class="gyik__accordion">
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
-                        <span>Szükséges az eseményre jegyet váltani?</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>Nem az esemény látogatása ingyenes.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
-                        <span>Hogyan tudok játszani / nevezni?</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>Minden játék lebonyolítása eltér. Kérlek, a <a href="#versenyek" class="gradient-link">Versenyek</a> résznél kattints a játék oldalára, ott megtalálod a részleteket.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
-                        <span>Hol tudom nézni?</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>Élőben a helyszínen, online pedig <a href="https://www.twitch.tv/wortexgghu" target="_blank" rel="noopener noreferrer" class="gradient-link">Twitch</a> és <a href="https://www.youtube.com/@wortexgghu" target="_blank" rel="noopener noreferrer" class="gradient-link">YouTube</a> csatornáinkon.</p>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <button class="accordion-item__header" aria-expanded="false">
-                        <span>Partner szeretnék lenni.</span>
-                        <span class="accordion-item__icon">+</span>
-                    </button>
-                    <div class="accordion-item__content">
-                        <p>Nagyon örülünk! Vedd fel velünk a <a href="#kapcsolat" class="gradient-link">kapcsolatot</a> valamelyik elérhetőségen.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="gyik__cta">
-                <a href="#kapcsolat" class="btn btn--primary btn--large">TOVÁBBI KÉRDÉSEM VAN</a>
-            </div>
-        </div>
+    <!-- SOLUTIONS SECTION TEMPORARILY HIDDEN
+    <section class="solutions" id="solutions" aria-labelledby="solutions-title">
+      <div class="section-light solutions-light" aria-hidden="true"></div>
+
+      <header class="section-head">
+        <p class="eyebrow">07 — SYSTEMS</p>
+        <h2 class="display" id="solutions-title">SOLUTIONS</h2>
+      </header>
+
+      <ol class="solution-list" id="solution-list"></ol>
+    </section>
+    -->
+
+    <!-- MERCHANDISE -->
+    <section class="merch" id="merch" aria-labelledby="merch-title">
+      <div class="section-light merch-light" aria-hidden="true"></div>
+
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="merch.kicker">07 — GEAR</p>
+        <h2 class="display" id="merch-title" data-i18n="merch.title">MERCHANDISE</h2>
+      </header>
+
+      <ul class="merch-grid" id="merch-grid"></ul>
     </section>
 
-    <!-- Shop Section -->
-    <section class="section section--shop" id="shop">
-        <div class="container">
-            <h2 class="section__title">Shop</h2>
-            <div class="shop__grid">
-                <div class="product-card">
-                    <div class="product-card__image product-card__image--swap">
-                        <img src="shop/img/items/good-game-t-shirt-men-front.jpg" alt="Good Game póló">
-                        <img src="shop/img/items/good-game-t-shirt-front-black-just-shirt.jpg" alt="" class="product-card__image-hover" aria-hidden="true">
-                    </div>
-                    <div class="product-card__content">
-                        <h3 class="product-card__title">Good Game</h3>
-                        <p class="product-card__description">Good Game grafikás fekete póló WORTEX hangulattal.</p>
-                        <a href="shop/product.html?item=good-game-polo" class="btn btn--primary">Megnézem</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-card__image product-card__image--swap">
-                        <img src="shop/img/items/wortex-wave-t-shirt-men-front.jpg" alt="WORTEX Wave póló">
-                        <img src="shop/img/items/wortex-wave-t-shirt-front-black-just-shirt.jpg" alt="" class="product-card__image-hover" aria-hidden="true">
-                    </div>
-                    <div class="product-card__content">
-                        <h3 class="product-card__title">WORTEX Wave</h3>
-                        <p class="product-card__description">WORTEX Wave grafikás fekete póló WORTEX hangulattal.</p>
-                        <a href="shop/product.html?item=wortex-wave-polo" class="btn btn--primary">Megnézem</a>
-                    </div>
-                </div>
-                <div class="product-card">
-                    <div class="product-card__image">
-                        <img src="shop/img/items/legacy-black-mug.png" alt="Legacy 2026 bögre">
-                    </div>
-                    <div class="product-card__content">
-                        <h3 class="product-card__title">Kiegészítők</h3>
-                        <p class="product-card__description">Bögrék, sapkák és WORTEX kiegészítők közösségi hangulattal.</p>
-                        <a href="shop/index.html" class="btn btn--primary">Megnézem</a>
-                    </div>
-                </div>
-            </div>
-            <div class="shop__cta">
-                <a href="shop/index.html" class="btn btn--secondary">Minden termék</a>
-            </div>
-        </div>
+    <!-- PARTNERS -->
+    <section class="partners" id="partners" aria-labelledby="partners-title">
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="partners.kicker">08 — ALLIANCE</p>
+        <h2 class="display" id="partners-title" data-i18n="partners.title">PARTNERS</h2>
+      </header>
+
+      <ul class="partner-grid">
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-azx-creative-grafika.webp" alt="AZX Creative, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-dombai.webp" alt="Dombai Sports, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-gamerland-budapest.webp" alt="Gamerland Budapest, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-hammertimecafe.webp" alt="HammerTime Café, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-hungarian-pro-series.webp" alt="Hungarian Pro Series, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-pizza-hut.webp" alt="Pizza Hut, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+        <li>
+          <div class="partner-cell">
+            <img src="assets/logos/partnerek-youtooz.webp" alt="Youtooz, WORTEX partner" loading="lazy" decoding="async">
+          </div>
+        </li>
+      </ul>
+
+      <div class="partner-cta">
+        <p class="eyebrow" data-i18n="partners.cta">Become a partner</p>
+        <p class="partner-cta-copy" data-i18n="partners.copy">Interested in working with WORTEX?</p>
+        <a class="partner-mail" href="mailto:partners@wortexgg.hu" data-cursor="MAIL">partners@wortexgg.hu</a>
+      </div>
     </section>
 
-    <!-- Kapcsolat Section -->
-    <section class="section section--kapcsolat" id="kapcsolat">
-        <div class="container">
-            <h2 class="section__title">Kapcsolat</h2>
-            <div class="kapcsolat__content">
-                <p class="kapcsolat__text">
-                    Csatlakozz a WORTEX közösséghez — itt jönnek a dátumok, nevezések és a friss hírek először.
-                </p>
-                <div class="kapcsolat__buttons">
-                    <a href="https://wortexgg.hu/discord" class="btn btn--primary btn--large kapcsolat__btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                        </svg>
-                        <span>Discord</span>
-                    </a>
-                    <a href="https://facebook.com/wortexgghu" class="btn btn--primary btn--large kapcsolat__btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                        </svg>
-                        <span>Facebook</span>
-                    </a>
-                    <a href="https://instagram.com/wortexgghu" class="btn btn--primary btn--large kapcsolat__btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                        </svg>
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.twitch.tv/wortexgghu" class="btn btn--primary btn--large kapcsolat__btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428H12l-3 3v-3H4.714V1.714h15.857Z"/>
-                        </svg>
-                        <span>Twitch</span>
-                    </a>
-                    <a href="https://www.youtube.com/@wortexgghu" class="btn btn--primary btn--large kapcsolat__btn" target="_blank" rel="noopener noreferrer">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                        </svg>
-                        <span>YouTube</span>
-                    </a>
-                </div>
-                <p class="kapcsolat__info-text">
-                    Keress minket közösségi média felületeken, discordon vagy írj emailt!
-                </p>
-                <p class="kapcsolat__email">
-                    <strong>Email elérhetőség:</strong> <a href="mailto:contact@wortexgg.hu">contact@wortexgg.hu</a>
-                </p>
-            </div>
-        </div>
+    <!-- CONTACT -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="section-light vods-light" aria-hidden="true"></div>
+
+      <header class="section-head">
+        <p class="eyebrow" data-i18n="contact.kicker">09 — SIGNAL</p>
+        <h2 class="display" id="contact-title">
+          <span class="display-line" data-i18n="contact.line1">GET IN CONTACT</span>
+          <span class="display-line display-line--muted" data-i18n="contact.line2">WITH WORTEX</span>
+        </h2>
+      </header>
+
+      <ul class="contact-channels">
+        <li class="contact-channel">
+          <h3 id="contact-general" data-i18n="contact.general">General inquiries</h3>
+          <p data-i18n="contact.generalCopy">For general questions, tournament information, community topics and other enquiries.</p>
+          <a class="contact-mail" href="mailto:contact@wortexgg.hu" data-cursor="MAIL" aria-describedby="contact-general">contact@wortexgg.hu</a>
+        </li>
+        <li class="contact-channel">
+          <h3 id="contact-podcast" data-i18n="contact.podcast">Podcast</h3>
+          <p data-i18n="contact.podcastCopy">For WRTX Podcast guests, topics, collaborations and podcast-related enquiries.</p>
+          <a class="contact-mail" href="mailto:podcast@wortexgg.hu" data-cursor="MAIL" aria-describedby="contact-podcast">podcast@wortexgg.hu</a>
+        </li>
+        <li class="contact-channel">
+          <h3 id="contact-partners" data-i18n="contact.partnerships">Partnerships</h3>
+          <p data-i18n="contact.partnershipsCopy">For sponsorships, brand partnerships, collaborations and working together with WORTEX.</p>
+          <a class="contact-mail" href="mailto:partners@wortexgg.hu" data-cursor="MAIL" aria-describedby="contact-partners">partners@wortexgg.hu</a>
+        </li>
+      </ul>
+
+      <div class="contact-follow">
+        <p class="eyebrow" data-i18n="contact.follow">Follow WORTEX</p>
+        <nav class="footer-socials contact-socials" id="contact-links" aria-label="WORTEX social profiles" data-i18n-attr="aria-label:contact.socials"></nav>
+      </div>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__logo">WORTEX</div>
-                <div class="footer__social">
-                    <a href="https://wortexgg.hu/discord" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Discord">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
-                        </svg>
-                    </a>
-                    <a href="https://facebook.com/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                    </a>
-                    <a href="https://instagram.com/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                    <a href="https://www.twitch.tv/wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitch">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428H12l-3 3v-3H4.714V1.714h15.857Z"/></svg>
-                    </a>
-                    <a href="https://www.youtube.com/@wortexgghu" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="YouTube">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                    </a>
-                </div>
-                <div class="footer__email">
-                    <a href="mailto:contact@wortexgg.hu">contact@wortexgg.hu</a>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <p>© WORTEX — Minden jog fenntartva.</p>
-                <p class="footer__credit"><a href="https://azxcreative.com" target="_blank" rel="noopener noreferrer">AZX Creative</a></p>
-            </div>
+  <footer class="tourney-footer">
+    <div class="tourney-footer-grid">
+      <div>
+        <p class="tourney-footer-brand">WORTEX</p>
+        <div class="tourney-footer-meta">
+          <span>Realms Unleashed</span>
+          <span data-i18n="footer.hungary">Hungary</span>
+          <span data-i18n="footer.est">Est. 2025</span>
         </div>
-    </footer>
-
-    <!-- Video Modal (Rólunk + Támogatás) -->
-    <div class="video-modal" id="rolunk-video-modal">
-        <div class="video-modal__overlay" id="rolunk-video-modal-overlay"></div>
-        <div class="video-modal__content">
-            <button class="video-modal__close" id="rolunk-video-modal-close" aria-label="Bezárás">&times;</button>
-            <div class="video-placeholder" style="border-radius: 12px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,0.6);">
-                <iframe id="rolunk-video-modal-iframe" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
+      </div>
+      <div>
+        <h3 data-i18n="footer.social">Social</h3>
+        <nav class="footer-socials" id="footer-socials" aria-label="WORTEX social profiles" data-i18n-attr="aria-label:contact.socials"></nav>
+      </div>
+      <div>
+        <h3 data-i18n="footer.tournaments">Tournaments</h3>
+        <nav class="footer-links" aria-label="Tournaments" data-i18n-attr="aria-label:footer.tournaments">
+          <a href="tournaments/starcraft2.html" data-cursor="VIEW">STARCRAFT II</a>
+          <a href="tournaments/starcraft.html" data-cursor="VIEW">STARCRAFT</a>
+          <a href="tournaments/hearthstone.html" data-cursor="VIEW">HEARTHSTONE</a>
+          <a href="tournaments/more.html" data-cursor="VIEW" data-i18n="footer.more">MORE</a>
+        </nav>
+      </div>
+      <div>
+        <h3>WORTEX</h3>
+        <nav class="footer-links" aria-label="WORTEX">
+          <a href="#about" data-cursor="VIEW" data-i18n="nav.about">About</a>
+          <a href="#hall" data-cursor="VIEW" data-i18n="nav.hall">Hall of Fame</a>
+          <a href="articles.html" data-cursor="READ" data-i18n="nav.articles">Articles</a>
+          <a href="mailto:contact@wortexgg.hu" data-cursor="MAIL" data-i18n="nav.contact">Contact</a>
+        </nav>
+      </div>
     </div>
-
-    <!-- HammerTime Cafe Partner Modal -->
-    <div class="modal" id="hammertime-modal">
-        <div class="modal__overlay" id="hammertime-modal-overlay"></div>
-        <div class="modal__content modal__content--partner">
-            <button class="modal__close" id="hammertime-modal-close" aria-label="Bezárás">&times;</button>
-            <div class="modal__header-logo">
-                <img src="img/hammertimecafe.png" alt="HammerTime Cafe">
-            </div>
-            <div class="modal__text">
-                <p>A <strong>HammerTime Cafe</strong> Budapest egyik meghatározó geek közösségi helyszíne és terepasztalos társasjáték szaküzlete, amely immár több mint egy évtizede szolgálja a hazai hobbi- és játékosközösséget. Nemrég ünnepeltük fennállásunk 10. évfordulóját, ami számunkra nemcsak egy mérföldkő, hanem annak bizonyítéka is, hogy a közösségépítés, a minőségi rendezvények és a hobbi iránti szenvedély hosszú távon is értéket teremt.</p>
-                <p>Üzletünkben széles választékban találhatók figurák, festékek, modellező eszközök, terepelemek és kiegészítők a legnépszerűbb terepasztalos játékokhoz. Kiemelt szerepet kapnak nálunk a <strong>Warhammer 40.000</strong>, <strong>Warhammer: Age Of Sigmar</strong>, valamint a <strong>Warhammer</strong> univerzum további játékai, illetve a közeljövőtől a StarCraft Tabletop Miniature Game is.</p>
-                <p>A közösségépítés mindig központi szerepet töltött be nálunk. Az elmúlt 10 év során aktívan dolgoztunk azon, hogy egy összetartó és folyamatosan fejlődő közösséget építsünk a terepasztalos játékok kedvelői számára, amelynek eredményeként ma már egy aktív és elkötelezett játékosbázis működik a <strong>HammerTime Cafe</strong> körül. Ennek részeként egész évben szervezünk versenyeket, ligákat, kampányokat, nyílt játékalkalmakat, bemutató eseményeket és kezdőnapokat.</p>
-                <p>A StarCraft Tabletop Miniature Game megjelenésével célunk, hogy ugyanezt a közösségépítő szemléletet vigyük tovább, ezért a játék támogatására rendszeres eseményeket, versenyeket és kezdőprogramokat tervezünk, hogy minél többen csatlakozhassanak az új közösséghez.</p>
-                <p>Büszkék vagyunk rá, hogy partnerként csatlakozhatunk a WORTEX közösségéhez, és együtt építhetjük tovább a hazai gamer, esport és geek kultúrát.</p>
-            </div>
-            <div class="modal__location">
-                <a href="https://maps.app.goo.gl/UoackLQXKWkvxS1z6" target="_blank" rel="noopener noreferrer" class="modal__location-link">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <span>1091 Budapest, Üllői út 111.</span>
-                </a>
-                <div class="modal__map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.741!2d19.0823488!3d47.4803767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dce4de231693%3A0x774ba6582a46151c!2sHammerTime%20Cafe!5e0!3m2!1shu!2shu!4v1749129600000!5m2!1shu!2shu" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="HammerTime Cafe térkép"></iframe>
-                </div>
-            </div>
-            <div class="modal__cta">
-                <a href="https://hammertimecafe.hu/" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large">Weboldal megtekintése</a>
-            </div>
-        </div>
+    <div class="tourney-footer-legal">
+      <span>© WORTEX</span>
+      <span data-i18n="footer.built">Built for the community.</span>
+      <span><span data-i18n="footer.designed">Designed by</span> <a href="https://azxcreative.com" target="_blank" rel="noopener noreferrer">AZX Creative</a></span>
     </div>
+  </footer>
 
-    <!-- Adomány Modal -->
-    <div class="modal" id="adomany-modal">
-        <div class="modal__overlay" id="adomany-modal-overlay"></div>
-        <div class="modal__content">
-            <button class="modal__close" id="adomany-modal-close" aria-label="Bezárás">&times;</button>
-            <h2 class="modal__title">Adományozás</h2>
-            <div class="modal__text">
-                <p>Az adományoddal a WORTEX esemény megvalósításához járulsz hozzá. A teljes összeg kizárólag az esemény költségeire kerül felhasználásra: nyereményalap, helyszín, ajándéktárgyak, lebonyolítás, vagy egyéb, az eseménnyel közvetlenül összefüggő költségek.</p>
-                <p>Az adomány önkéntes, ellenszolgáltatás nélküli hozzájárulás. Az adományozott összeget nem áll módunkban visszatéríteni, amennyiben a WORTEX esemény a 2026-os naptári évben megvalósul.</p>
-                <p class="modal__disclaimer">Az „Elfogadom, adományozás" gombra kattintva elfogadod a fenti feltételeket.</p>
-            </div>
-            <div class="modal__cta">
-                <button class="btn btn--primary btn--large" id="adomany-elfogadom-btn">ELFOGADOM, ADOMÁNYOZÁS</button>
-            </div>
-            <div class="modal__cta modal__cta--methods" id="adomany-methods" style="display: none;">
-                <a href="https://revolut.me/aztex" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large modal__cta-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
-                    Bankkártyás
-                </a>
-                <a href="https://www.paypal.com/paypalme/DrKardosBalazs?country.x=HU&amp;locale.x=en_US" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--large modal__cta-btn">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M7.076 21.337H2.47a.641.641 0 0 1-.633-.74L4.944 2.23A.77.77 0 0 1 5.703 1.6h6.865c2.14 0 3.927.612 5.084 1.77.577.577.989 1.264 1.216 2.041.236.803.271 1.711.098 2.715l-.014.073v.646l.502.254c.424.208.762.453 1.022.738.436.478.718 1.08.838 1.788.123.733.083 1.604-.118 2.59-.233 1.14-.614 2.132-1.133 2.944a5.65 5.65 0 0 1-1.77 1.834 6.594 6.594 0 0 1-2.283.958c-.823.196-1.746.296-2.743.296H12.58a1.517 1.517 0 0 0-1.499 1.282l-.037.194-.63 3.993-.029.14a.16.16 0 0 1-.157.134H7.076z"/><path d="M18.282 7.583v.38c-.87 4.46-3.843 6.003-7.647 6.003H8.713a.94.94 0 0 0-.929.795l-.988 6.264-.28 1.775a.495.495 0 0 0 .488.572h3.432a.825.825 0 0 0 .815-.694l.034-.173.646-4.092.042-.225a.825.825 0 0 1 .815-.694h.513c3.322 0 5.923-1.35 6.683-5.254.318-1.631.153-2.994-.687-3.95a3.274 3.274 0 0 0-.938-.707z" opacity=".7"/></svg>
-                    PayPal
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast">
-        <span class="toast__message" id="toast-message"></span>
-    </div>
-
-    <!-- Structured Data (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Event",
-        "name": "WORTEX",
-        "description": "Magyarország legnagyobb Blizzard-tematikájú rendezvénye. Ingyenes esemény Budapesten, ahol a Blizzard-játékok versenyei és közösségi programok találkoznak.",
-        "startDate": "2026",
-        "eventStatus": "https://schema.org/EventScheduled",
-        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-        "location": {
-            "@type": "Place",
-            "name": "Budapest",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Budapest",
-                "addressCountry": "HU"
-            }
-        },
-        "organizer": {
-            "@type": "Organization",
-            "name": "WORTEX",
-            "url": "https://wortexgg.hu",
-            "email": "contact@wortexgg.hu",
-            "sameAs": [
-                "https://wortexgg.hu/discord",
-                "https://www.youtube.com/@wortexgghu",
-                "https://facebook.com/wortexgghu",
-                "https://instagram.com/wortexgghu",
-                "https://www.twitch.tv/wortexgghu"
-            ]
-        },
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "HUF",
-            "availability": "https://schema.org/InStock"
-        }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "WORTEX",
-        "url": "https://wortexgg.hu",
-        "logo": "https://wortexgg.hu/img/wortex-logo.webp",
-        "email": "contact@wortexgg.hu",
-        "sameAs": [
-            "https://wortexgg.hu/discord",
-            "https://www.youtube.com/@wortexgghu",
-            "https://facebook.com/wortexgghu",
-            "https://instagram.com/wortexgghu",
-            "https://www.twitch.tv/wortexgghu"
-        ]
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "WORTEX",
-        "url": "https://wortexgg.hu",
-        "description": "WORTEX — Magyarország legnagyobb Blizzard-tematikájú rendezvénye",
-        "inLanguage": "hu"
-    }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.1.0/dist/cookieconsent.umd.js"></script>
-    <script src="script.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script defer src="i18n.js"></script>
+  <script defer src="i18n-articles.js"></script>
+  <script defer src="articles.js"></script>
+  <script defer src="script.js"></script>
+  <script type="module" src="about-3d.js"></script>
 </body>
 </html>

@@ -2,127 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wortexgg.hu/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/clubcup</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://wortexgg.hu/articles.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/clubcup-szabalyzat</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://wortexgg.hu/articles/wortex-from-community-to-offline-stage.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/starcraft2</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://wortexgg.hu/articles/signature-series-panda.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/starcraft2-szabalyzat</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://wortexgg.hu/articles/warcraft-starcraft-new-era.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/starcraft</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://wortexgg.hu/tournaments/starcraft2.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/starcraft-szabalyzat</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://wortexgg.hu/tournaments/starcraft.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/warcraft3</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://wortexgg.hu/tournaments/hearthstone.html</loc>
   </url>
   <url>
-    <loc>https://wortexgg.hu/versenyek/hearthstone</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/versenyek/hearthstone-szabalyzat</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/podcast</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product-f2-a-polo.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=good-game-polo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=wortex-wave-polo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=legacy-polo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=wortex-2025-polo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=my-playstyle-polo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=good-game-hoodie</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=wortex-wave-hoodie</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=good-game-mug</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=my-playstyle-mug</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=legacy-mug</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=wortex-cap</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://wortexgg.hu/shop/product.html?item=wortex-wave-pin</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://wortexgg.hu/tournaments/more.html</loc>
   </url>
 </urlset>
